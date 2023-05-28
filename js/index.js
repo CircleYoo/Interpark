@@ -45,8 +45,8 @@ window.onload = function () {
     if (req.readyState === XMLHttpRequest.DONE) {
       // console.log(req.response);
       // 현재 전달된 문자들은 josn 이 아니다.
-      // req.response 는 데이터 타입이 문자열입니다.
-      // 문자열을 json 객체로 변경하는 작업을 하셔야 합니다.
+      // req.response 는 데이터 타입이 문자열.
+      // 문자열을 json 객체로 변경하는 작업을 해보자.
       data = JSON.parse(req.response);
       makePromotionSlide();
     }
