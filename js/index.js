@@ -31,8 +31,8 @@ window.onload = function () {
   });
   // <!-- Initialize Swiper -->
 
-  // 2번. json 데이터로 뽑아보기
   // 1번. 백틱을 이용한 html 생성
+  // 2번. json 데이터로 뽑아보기
   // .sw-promotion 에 출력할 html 생성
   // for 문을 이용한 데이터 html 생성
   // json 형태: JavaScript Object Notaition 형식의 데이터가 전달됨.
@@ -44,7 +44,7 @@ window.onload = function () {
     const req = event.target;
     if (req.readyState === XMLHttpRequest.DONE) {
       // console.log(req.response);
-      // 현재 전달된 문자들은 josn 이 아닙니다.
+      // 현재 전달된 문자들은 josn 이 아니다.
       // req.response 는 데이터 타입이 문자열입니다.
       // 문자열을 json 객체로 변경하는 작업을 하셔야 합니다.
       data = JSON.parse(req.response);
