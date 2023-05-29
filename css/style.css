@@ -10,8 +10,11 @@ ul {
   list-style: none;
 }
 a {
-  color: #000;
+  color: #111;
   text-decoration: none;
+}
+b {
+  font-weight: bold;
 }
 img {
   vertical-align: middle;
@@ -479,7 +482,7 @@ body {
   top: 25px;
   right: 0;
   background: #fff;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 13px;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 
@@ -490,7 +493,7 @@ body {
 .mypage-list {
 }
 .mypage-list li {
-  margin: 10px 0;
+  margin: 1.4rem 0;
 }
 .member-list li:first-child {
   margin-top: 0;

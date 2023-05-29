@@ -16,7 +16,7 @@ window.onload = function () {
   // });
 
   // anime.js
-  // 알아보자
+  // 알아보기
   const scrollElement =
     window.document.scrollingElement ||
     window.document.body ||
