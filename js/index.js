@@ -1,14 +1,10 @@
-// html, css, js, image, font, video...
-// 사용되는 리소스가 모두 로드가 완료되고 나서 형
-// js 를 실행하여야 정상적인 처리가 가능하다.
-
 window.onload = function () {
   // 위로 이동하기
   // .gotop 을 js에 저장하자.
   const goTop = document.querySelector(".gotop");
   // goTop 클릭을 처리한다.
   // goTop.addEventListener("click", function () {
-  //   // 위로 슬라이등 코드
+  //   // 위로 슬라이드
   //   window.scrollTo({
   //     top: 0,
   //     behavior: "smooth",
