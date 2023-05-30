@@ -1,109 +1,109 @@
 /* 공통클래스 */
-  .inner {
-    max-width: 100%;
-  }
+.inner {
+  max-width: 100%;
+}
 
-  /* 추천이벤트 */
-    .promotion .inner {
-    height: 290px;
-  }
-  .sw-promotion {
-    /* 화면의 너비에 비해 줄어드는 것은 맞다  */
-    /* 하지만 일정 너비 이하로는 줄어들지 않았으면 좋겠다.  */
-    width: 50%;
-    min-width: 35rem;
-  }
+/* 추천이벤트 */
+.promotion .inner {
+  height: 290px;
+}
+.sw-promotion {
+  /* 화면의 너비에 비해 줄어드는 것은 맞다  */
+  /* 하지만 일정 너비 이하로는 줄어들지 않았으면 좋겠다.  */
+  width: 50%;
+  min-width: 35rem;
+}
 
-  .sw-promotion-control {
-    margin-top: -2rem;
-    z-index: 999;
-  }
-  .sw-promotion-pg .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    opacity: 0.3;
-    background-color: var(--white);
-  }
-  .sw-promotion-pg .swiper-pagination-bullet-active {
-    opacity: 1;
-    width: 8px;
-    height: 8px;
-    background-color: var(--white);
-  }
+.sw-promotion-control {
+  margin-top: -2rem;
+  z-index: 999;
+}
+.sw-promotion-pg .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: var(--white);
+}
+.sw-promotion-pg .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  background-color: var(--white);
+}
 
-  /* 쇼핑추천 */
-  .good-info-list li b {
-    font-size: 12px;
-    line-height: 18px;
-  }
-  .good-info {
-    padding: 5px;
-  }
-  .good-info-list li p {
-    font-size: 13px;
-    line-height: 1rem;
-    height: 32px;
-  }
+/* 쇼핑추천 */
+.good-info-list li b {
+  font-size: 12px;
+  line-height: 18px;
+}
+.good-info {
+  padding: 5px;
+}
+.good-info-list li p {
+  font-size: 13px;
+  line-height: 1rem;
+  height: 32px;
+}
 
-  /* 티켓랭킹 */
-    .ticket-info {
-    padding: 10px 5px;
-  }
-  .ticket-title {
-    font-size: 15px;
-    line-height: 18px;
-    height: 36px;
-    font-weight: 400;
-  }
-  .ticket-title b {
-  }
-  .ticket-hall {
-    font-size: 13px;
-    line-height: 1rem;
-    margin: 5px 0;
-  }
-  .ticket-date {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .ticket-sale {
-    font-size: 10px;
-    line-height: 18px;
-    padding: 0 5px;
-  }
+/* 티켓랭킹 */
+.ticket-info {
+  padding: 10px 5px;
+}
+.ticket-title {
+  font-size: 15px;
+  line-height: 18px;
+  height: 36px;
+  font-weight: 400;
+}
+.ticket-title b {
+}
+.ticket-hall {
+  font-size: 13px;
+  line-height: 1rem;
+  margin: 5px 0;
+}
+.ticket-date {
+  font-size: 12px;
+  line-height: 14px;
+}
+.ticket-sale {
+  font-size: 10px;
+  line-height: 18px;
+  padding: 0 5px;
+}
 
 /* 인터파크 라이브 */
-  .live .section-slide {
-    height: 230px;
-  }
+.live .section-slide {
+  height: 230px;
+}
 
-  .live-info-title {
-    font-size: 14px;
-    line-height: 1.6rem;
-    height: 34px;
-  }
-  .live-info-date {
-    font-size: 13px;
-    line-height: 1rem;
-  }
-  .live-info-time {
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .live-info-bottom {
-    padding: 0 10px;
-  }
-  .live-info-desc {
-    float: right;
-    width: 100%;
-  }
-  /* 화면이 좁을 때 이미지 숨김 */
-  .live-info-thumb {
-    display: none;
-  }
-  
+.live-info-title {
+  font-size: 14px;
+  line-height: 1.6rem;
+  height: 34px;
+}
+.live-info-date {
+  font-size: 13px;
+  line-height: 1rem;
+}
+.live-info-time {
+  font-size: 24px;
+  line-height: 28px;
+}
+.live-info-bottom {
+  padding: 0 10px;
+}
+.live-info-desc {
+  float: right;
+  width: 100%;
+}
+/* 화면이 좁을 때 이미지 숨김 */
+.live-info-thumb {
+  display: none;
+}
+
 /* 오늘의 도서 */
-  .books-img {
-    height: 41.66vw;
-  }
+.books-img {
+  height: 41.66vw;
+}
