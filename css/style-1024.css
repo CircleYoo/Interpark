@@ -1,0 +1,311 @@
+/* 공통클래스 */
+    .inner {
+      padding: 0 2rem;
+      padding-bottom: 2rem;
+  
+      max-width: 760px;
+      border-bottom: 8px solid #f0f4f4;
+    }
+
+/* swiper 버튼 */
+    .sw-bt {
+      display: none;
+    }
+
+/* section 내용 구조 */
+    .wrap>section {
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
+  
+    .section-top {}
+  
+    .section-top>h2 {
+      font-size: 2rem;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+  
+    .section-top>p {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  
+    .bt-link-shop {
+      display: block;
+      font-size: 15px;
+      line-height: 48px;
+      border-radius: 3px;
+    }
+  
+    .section-top .btns {
+      margin: 15px 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  
+    .section-top .btns a {
+      line-height: 34px;
+      padding: 0 14px;
+      margin-right: 5px;
+    }
+
+/* 퀵메뉴 */
+    .quick-menu {
+      display: block;
+    }
+
+/* 기본레이아웃 */
+/* 상단 */
+    .header {
+      border: none;
+    }
+  
+    .header .inner {
+      padding-top: 15px;
+      height: 230px;
+    }
+  
+    .logo {
+      width: 77px;
+      height: 18px;
+      margin-left: 15px;
+    }
+  
+    .header-left {
+      width: 100%;
+    }
+  
+    .search {
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .member-list {
+      display: none;
+    }
+  
+    .mb-mypage {
+      display: block;
+    }
+  
+    .header-down {
+      text-align: center;
+    }
+  
+    .service-list {
+      display: inline-block;
+      float: none;
+      margin-top: 0px;
+    }
+  
+    .service-list li {
+      padding-right: 2rem;
+    }
+  
+    .service-list li:last-child {
+      margin-right: 0px;
+    }
+  
+    .service-list li a {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  
+    .service-list li a img {
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto;
+    }
+  
+    .service-menu {
+      display: none;
+    }
+
+/* 추천이벤트 */
+    .promotion {}
+  
+    .promotion .inner {
+      height: 300px;
+    }
+  
+    .promotion .section-top {
+      display: block;
+    }
+  
+    .promotion .sw-bt {
+      display: none;
+    }
+  
+    .sw-promotion-control {
+      display: block;
+    }
+  
+    /* swiper.js 에서 자동으로 css 생성 */
+    .sw-promotion-pg .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      opacity: 0.2;
+      background-color: #000;
+    }
+  
+    .sw-promotion-pg .swiper-pagination-bullet-active {
+      opacity: 1;
+      background-color: #000;
+    }
+
+/* 쇼핑추천 */
+    .good-info {
+      padding: 10px;
+    }
+
+/* 투어특가 */
+    .tour-img {
+      /* height: 138px; */
+    }
+  
+    .tour-info {
+      padding: 10px;
+    }
+  
+    .tour-cate {
+      top: -22px;
+      line-height: 22px;
+      padding: 0 7px;
+      border-radius: 4px;
+    }
+  
+    .tour-title {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  
+    .tour-price {
+      font-size: 15px;
+    }
+  
+    .tour-price b {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+/* 티켓랭킹 */
+    /* .ticket .section-slide {
+      width: 120%;
+      overflow: hidden;
+    } */
+    .ticket-rank {
+      left: 12px;
+      font-size: 38px;
+      line-height: 45px;
+    }
+  
+    .ticket-img img {
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  
+    .sw-ticket .swiper-slide {
+      width: 15rem;
+    }
+
+/* 인터파크 라이브 */
+    .live .section-slide {
+      height: 285px;
+    }
+  
+    .live-info {
+      padding: 12px;
+    }
+  
+    .live-info-cate {
+      font-size: 10px;
+      line-height: 2rem;
+      border-radius: 10px;
+      padding: 0 7px;
+    }
+  
+    .live-info-title {
+      font-size: 14px;
+      line-height: 1.6rem;
+      height: 34px;
+    }
+  
+    .live-info-date {
+      font-size: 18px;
+      line-height: 21px;
+      white-space: nowrap;
+    }
+  
+    .live-info-time {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  
+    .live-info-desc {
+      float: right;
+      width: calc(100% - 40px - 10px);
+    }
+  
+    .live-info-thumb {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .live-info-desc-title {
+      font-size: 13px;
+      margin-top: 5px;
+    }
+  
+    .live-info-desc-price {
+      font-size: 13px;
+      white-space: nowrap;
+      margin-top: -5px;
+    }
+  
+    .live-info-desc-price em {
+      font-size: 13px;
+    }
+  
+    .live-info-desc-price b {
+      font-size: 13px;
+    }
+
+/* 오늘의 도서 */
+    .books-img {
+      height: 322px;
+    }
+  
+    .books-info-title {
+      font-size: 13px;
+      line-height: 15px;
+      margin: 4px 0;
+    }
+  
+    .books-info-price {
+      font-size: 14px;
+    }
+  
+    .books-info-price em {
+      font-size: 14px;
+    }
+
+/* 이벤트 */
+    .event {
+      display: none;
+    }
+
+/* 푸터 */
+    .footer-menu {
+      display: none;
+    }
+  
+    .footer-main {
+      display: none;
+    }
+  
+    .footer-mobile {
+      display: block;
+    }
