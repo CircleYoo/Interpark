@@ -330,13 +330,14 @@ body {
   border-radius: 25px;
   overflow: hidden;
   padding: 0px 1rem;
+  position: relative;
 }
 .search-text {
   width: calc(100% - 25px);
   height: 100%;
   border: 0;
   padding-right: 3rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .search-text::placeholder {
@@ -446,9 +447,6 @@ body {
 
 .mb-mypage {
   display: none;
-  position: absolute;
-  top: -5px;
-  right: 10px;
 }
 
 .header-down {
