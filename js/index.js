@@ -278,7 +278,7 @@ window.onload = function () {
             <div class="ticket-info">
               <ul class="ticket-info-list">
                 <li>
-                  <span class="ticket-title"><b>${obj.title}</b></span>
+                  <span class="ticket-title">${obj.title}</span>
                 </li>
                 <li>
                   <span class="ticket-hall">${obj.hall}</span>

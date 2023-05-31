@@ -2,6 +2,8 @@
 @import url("font.css");
 :root {
   --text-color: #111;
+  --accenct-color: #1769ff;
+  /* #1769ff */
   --white: #fff;
 }
 * {
@@ -44,7 +46,7 @@ body {
 }
 @media screen and (max-width: 1280px) {
   .inner {
-    max-width: 1024px;
+    max-width: 1200px;
   }
 }
 
@@ -53,7 +55,7 @@ body {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
   font-size: 0;
@@ -92,26 +94,25 @@ body {
 
 /* section 내용 구조 */
 .wrap > section {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  padding: 3rem 0;
 }
 
 .section-top {
   text-align: center;
 }
 .section-top > h2 {
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .section-top > p {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   color: rgba(0, 0, 0, 0.5);
 }
 .section-top .btns {
-  margin: 25px 0;
+  margin: 2.5rem 0;
   /* inline-block 은 html 코드의 Enter 도 글자로 인식 */
   /* 그래서 공백글자가 들어간다. */
   font-size: 0;
@@ -119,10 +120,10 @@ body {
 .section-top .btns a {
   display: inline-block;
   border-radius: 2rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 0 2rem;
-  line-height: 42px;
-  font-size: 14px;
+  line-height: 4.2rem;
+  font-size: 1.4rem;
   color: var(--text-color);
   background: var(--white);
   margin-right: 6px;
@@ -143,10 +144,10 @@ body {
   /* 만약 block 이면 width 를 주고, margin: 0 auto; */
   /* inline-block 이므로 글자처럼 text-align:center  */
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 56px;
   padding: 0 40px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 28px;
   color: #333;
   font-weight: 700;
@@ -155,7 +156,7 @@ body {
   display: inline-block;
   position: relative;
   content: "";
-  margin-left: 3px;
+  margin-left: 0.7rem;
   width: 7px;
   height: 11px;
   background: url("../images/icon_linkArrow.svg") no-repeat center;
@@ -221,7 +222,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   padding: 0 1rem;
   max-width: inherit;
 }
@@ -268,7 +269,7 @@ body {
 }
 
 .fix-mypage-list li a {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #666;
 }
 .fix-mypage-list li a img {
@@ -418,7 +419,7 @@ body {
   background: var(--white);
   padding: 2rem;
   border-radius: 13px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
 
   opacity: 0;
   transition: all 0s;
@@ -440,7 +441,7 @@ body {
   /* 글자 줄내림 없다. */
   /* inline 은 한줄로 배치 */
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .mypage-list li a b {
   font-weight: 500;
@@ -506,7 +507,7 @@ body {
   content: "";
   width: 1px;
   height: 1rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 /* 추천이벤트 */
@@ -543,9 +544,9 @@ body {
   display: inline-block;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1180px) {
   .promotion .inner {
-    height: 275px;
+    height: 27.5rem;
   }
 }
 
@@ -565,7 +566,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   background: #eeeeee;
   text-align: center;
   overflow: hidden;
@@ -649,7 +650,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 .tour-img {
@@ -692,8 +693,8 @@ body {
   position: absolute;
   top: -39px;
   left: 0;
-  background: #4a95ff;
-  font-size: 14px;
+  background: var(--accenct-color);
+  font-size: 1.4rem;
   line-height: 32px;
   color: var(--white);
   font-weight: 700;
@@ -704,7 +705,7 @@ body {
   display: block;
   font-size: 15px;
   line-height: 18px;
-  color: #4a95ff;
+  color: var(--accenct-color);
   /* 1줄 말줄임 ...  */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -746,7 +747,7 @@ body {
   position: relative;
   width: 100%;
   max-height: 400px;
-  height: 31.25vw;
+  height: 40rem;
   overflow: hidden;
 
   border-radius: 10px;
@@ -781,11 +782,10 @@ body {
 }
 
 .ticket-info {
-  padding: 2rem 10px;
+  padding: 1rem 0.4rem;
   background: var(--white);
 }
-.ticket-info-list {
-}
+
 .ticket-info-list li {
   margin-bottom: 5px;
 }
@@ -795,46 +795,43 @@ body {
 .ticket-title {
   /* 2줄 ... 처리 */
   display: -webkit-box;
-  color: var(--text-color);
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-  height: 44px;
   overflow: hidden;
+  word-break: break-all;
+  line-height: 2.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  color: var(--text-color);
 }
 
 .ticket-hall {
-  display: block;
-  font-size: 15px;
-  line-height: 18px;
-  color: #666;
-  /* 1줄 ... 처리 */
+  width: 100%;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #666;
+  /* 1줄 ... 처리 */
+  margin: 0.7rem 0;
 }
 .ticket-date {
   display: block;
-  font-size: 14px;
-  line-height: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   color: #999;
 }
 .ticket-sale {
   display: inline-block;
-  line-height: 24px;
-  font-size: 11px;
-  padding: 0 8px;
+  line-height: 2.4rem;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
   color: #ef3e43;
   border: 1px solid rgba(239, 62, 67, 0.3);
   border-radius: 3px;
-}
-@media screen and (max-width: 1280px) {
-  .ticket-img img {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 /* 인터파크 라이브 */
@@ -1157,7 +1154,7 @@ body {
   right: 0;
   padding: 1.6rem;
   background: var(--white);
-  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
 .more-list li {
@@ -1228,7 +1225,7 @@ body {
   color: #666;
 }
 .company-info li a.line {
-  color: #4a95ff;
+  color: var(--accenct-color);
   text-decoration: underline;
 }
 .company-info li b {
@@ -1280,7 +1277,7 @@ body {
   top: 0;
   display: inline-block;
   width: 1px;
-  height: 14px;
+  height: 1.4rem;
   background: #afafaf;
 }
 .a-more::after {
@@ -1312,7 +1309,7 @@ body {
   font-size: 1rem;
   line-height: 1.4rem;
   color: #b2b2b2;
-  /* 줄내림 할 때 단어는 잘라서 내리지 말아라. */
+  /* 줄내림 할 때 단어는 잘라서 내리지않기 */
   word-break: keep-all;
   margin-bottom: 8.5rem;
 }

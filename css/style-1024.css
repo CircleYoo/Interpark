@@ -1,10 +1,10 @@
 /* 공통클래스 */
 .inner {
   padding: 0 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 
   max-width: 760px;
-  border-bottom: 8px solid #f0f4f4;
+  border-bottom: 1px solid #f0f4f4;
 }
 
 /* swiper 버튼 */
@@ -155,11 +155,8 @@
 }
 
 /* 추천이벤트 */
-.promotion {
-}
-
 .promotion .inner {
-  height: 30rem;
+  height: 32rem;
 }
 
 .promotion .section-top {
@@ -172,6 +169,7 @@
 
 .sw-promotion-control {
   display: block;
+  margin: 2rem;
 }
 
 /* swiper.js 에서 자동으로 css 생성 */
@@ -230,10 +228,13 @@
     } */
 .ticket-rank {
   left: 1.2rem;
-  font-size: 38px;
-  line-height: 45px;
+  bottom: 0.8rem;
+  font-size: 3.8rem;
+  line-height: 4.5rem;
 }
-
+.ticket-img {
+  height: 20rem;
+}
 .ticket-img img {
   transform: translate(-50%, -50%) scale(1.4);
 }
