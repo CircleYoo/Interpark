@@ -3,8 +3,8 @@
 :root {
   --text-color: #111;
   --accenct-color: #1769ff;
-  /* #1769ff */
   --white: #fff;
+  --gray-color: #f8f8fa;
 }
 * {
   margin: 0;
@@ -160,29 +160,6 @@ body {
   width: 7px;
   height: 11px;
   background: url("../images/icon_linkArrow.svg") no-repeat center;
-}
-
-@media screen and (max-width: 1280px) {
-  .wrap > section {
-  }
-
-  .section-top {
-  }
-  .section-top > h2 {
-  }
-  .section-top > p {
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .wrap > section {
-  }
-  .section-top {
-  }
-  .section-top > h2 {
-  }
-  .section-top > p {
-  }
 }
 
 /* 플라잉 배너 */
@@ -566,8 +543,8 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background: #eeeeee;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: var(--gray-color);
   text-align: center;
   overflow: hidden;
 }
@@ -650,7 +627,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
 .tour-img {

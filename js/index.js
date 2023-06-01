@@ -97,17 +97,14 @@ window.onload = function () {
 
   // <!-- Shopping Swiper -->
   let shoppingData;
-  const shopXhttp = new XMLHttpRequest();
-  shopXhttp.onreadystatechange = function (event) {
-    let req = event.target;
-    if (req.readyState === XMLHttpRequest.DONE) {
-      shoppingData = JSON.parse(req.response);
-      makeShoppingSlide();
-    }
-  };
-  shopXhttp.open("GET", "shoppingdata.json");
-  shopXhttp.send();
-
+  fetch('./shoppingdata.json')
+    .then(response => response.json())
+    .then(result => {
+      shoppingData = result;
+      makeShoppingSlide(result);
+    })
+    .catch(error => console.log(error));
+  
   function makeShoppingSlide() {
     let swShoppingHtml = ``;
     for (let i = 0; i < shoppingData.good_count; i++) {
@@ -139,6 +136,7 @@ window.onload = function () {
       slidesPerView: 5,
       grid: {
         rows: 2,
+        // column: 2,
         fill: "row",
       },
       spaceBetween: 10,
@@ -147,6 +145,14 @@ window.onload = function () {
         prevEl: ".shopping .sw-prev",
       },
       breakpoints: {
+        768: {
+          spaceBetween: 10,
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          grid: {
+            rows: 2,
+          },
+        },
         1024: {
           spaceBetween: 32,
           slidesPerView: 3,
@@ -170,16 +176,23 @@ window.onload = function () {
   }
 
   let tourData;
-  const tourXhttp = new XMLHttpRequest();
-  tourXhttp.onreadystatechange = function (event) {
-    const req = event.target;
-    if (req.readyState === XMLHttpRequest.DONE) {
-      tourData = JSON.parse(req.response);
-      makeTourSlide();
-    }
-  };
-  tourXhttp.open("GET", "tourdata.json");
-  tourXhttp.send();
+  // const tourXhttp = new XMLHttpRequest();
+  // tourXhttp.onreadystatechange = function (event) {
+  //   const req = event.target;
+  //   if (req.readyState === XMLHttpRequest.DONE) {
+  //     tourData = JSON.parse(req.response);
+  //     makeTourSlide();
+  //   }
+  // };
+  // tourXhttp.open("GET", "tourdata.json");
+  // tourXhttp.send();
+  fetch('./tourdata.json')
+    .then(response => response.json())
+    .then(result => {
+      tourData = result;
+      makeTourSlide(result);
+    })
+    .catch(error => console.log('toudata 가져오기 실패', error))
 
   function makeTourSlide() {
     let swTourHtml = ``;
