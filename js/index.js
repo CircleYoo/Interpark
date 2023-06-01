@@ -328,6 +328,12 @@ window.onload = function () {
     });
   }
 
+  let livedata;
+  fetch('./livedata.json')
+    .then(response => response.json())
+    .then(result => {
+      livedata = result;
+    })
   let liveSwiper = new Swiper(".sw-live", {
     slidesPerView: 4,
     spaceBetween: 10,
