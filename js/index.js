@@ -267,16 +267,12 @@ window.onload = function () {
 
   // 티켓 json 연동
   let ticketData;
-  const ticketXhttp = new XMLHttpRequest();
-  ticketXhttp.onreadystatechange = function (event) {
-    const req = event.target;
-    if (req.readyState === XMLHttpRequest.DONE) {
-      ticketData = JSON.parse(req.response);
+  fetch('./ticketdata.json')
+    .then(response => response.json())
+    .then(result => {
+      ticketData = result;
       makeTicketSlide();
-    }
-  };
-  ticketXhttp.open("GET", "ticketdata.json");
-  ticketXhttp.send();
+    })
   function makeTicketSlide() {
     let html = ``;
     for (let i = 0; i < ticketData.ticket_total; i++) {
@@ -350,36 +346,70 @@ window.onload = function () {
       },
     },
   });
-  let booksSwiper = new Swiper(".sw-books", {
-    slidesPerView: 3,
-    grid: {
-      rows: 4,
-      fill: "row",
-    },
-    spaceBetween: 19,
-    navigation: {
-      nextEl: ".books .sw-next",
-      prevEl: ".books .sw-prev",
-    },
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 30,
-        grid: {
-          rows: 1,
+
+  // 오늘의 도서 json 연동
+  let bookdata;
+  fetch('./bookdata.json')
+    .then(response => response.json())
+    .then(result => {
+      bookdata = result;
+      bookSilde();
+    })
+  function bookSilde() {
+    let html = ``;
+    for (let i = 0; i < bookdata.book_total; i++) {
+      let obj = bookdata[`book_${i + 1}`];
+      let temp = `
+        <div class="swiper-slide">
+          <a href="${obj.link}" class="books-link">
+            <div class="books-img">
+              <img src="images/${obj.pic}" alt="${obj.alt}" />
+            </div>
+            <div class="books-info">
+              <p class="books-info-title">${obj.title}</p>
+              <p class="books-info-price"><em>${obj.price}</em>원</p>
+            </div>
+          </a>
+        </div>
+      `;
+      html += temp;
+    }
+    const swBookWrapper = document.querySelector(
+      ".sw-books .swiper-wrapper"
+    );
+    swBookWrapper.innerHTML = html;
+    
+    let booksSwiper = new Swiper(".sw-books", {
+      slidesPerView: 3,
+      grid: {
+        rows: 4,
+        fill: "row",
+      },
+      spaceBetween: 19,
+      navigation: {
+        nextEl: ".books .sw-next",
+        prevEl: ".books .sw-prev",
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 30,
+          grid: {
+            rows: 1,
+          },
+        },
+        1280: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          spaceBetween: 27,
+          grid: {
+            rows: 1,
+          },
         },
       },
-      1280: {
-        slidesPerView: 5,
-        slidesPerGroup: 5,
-        spaceBetween: 27,
-        grid: {
-          rows: 1,
-        },
-      },
-    },
-  });
+    });
+  }
 
   let eventsSwiper = new Swiper(".sw-events", {
     slidesPerView: 3,

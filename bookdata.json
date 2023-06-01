@@ -1,0 +1,73 @@
+{
+  "book_total": 10,
+  "book_1": {
+    "link": "#",
+    "pic": "MD_book1.jpg",
+    "alt": "book",
+    "title": "New 대한민국 청약지도",
+    "price": "18,000"
+  },
+  "book_2": {
+    "link": "#",
+    "pic": "MD_book2.jpg",
+    "alt": "book",
+    "title": "스트레이키즈 앨범 정규 3집 파이브 스타 5 STAR 일반반 [3종세트]",
+    "price": "11,700"
+  },
+  "book_3": {
+    "link": "#",
+    "pic": "MD_book3.jpg",
+    "alt": "book",
+    "title": "보그 Vogue Korea D형 2023 6월호 (표지 : BTS RM)",
+    "price": "10,800"
+  },
+  "book_4": {
+    "link": "#",
+    "pic": "MD_book4.jpg",
+    "alt": "book",
+    "title": "눈물을 마시는 새 출판 20주년 일러스트 특별 한정판 세트",
+    "price": "90,000"
+  },
+  "book_5": {
+    "link": "#",
+    "pic": "MD_book5.jpg",
+    "alt": "book",
+    "title": "뭔말 역사 용어 150",
+    "price": "18,900"
+  },
+  "book_6": {
+    "link": "#",
+    "pic": "MD_book6.jpg",
+    "alt": "book",
+    "title": "나는 매일 더 가벼워지고 있습니다",
+    "price": "16,200"
+  },
+  "book_7": {
+    "link": "#",
+    "pic": "MD_book7.jpg",
+    "alt": "book",
+    "title": "원피스 105: 루피의 꿈",
+    "price": "4,950"
+  },
+  "book_8": {
+    "link": "#",
+    "pic": "MD_book8.jpg",
+    "alt": "book",
+    "title": "풍수전쟁",
+    "price": "15,120"
+  },
+  "book_9": {
+    "link": "#",
+    "pic": "MD_book9.jpg",
+    "alt": "book",
+    "title": "유현준의 인문 건축 기행",
+    "price": "17,550"
+  },
+  "book_10": {
+    "link": "#",
+    "pic": "MD_book10.jpg",
+    "alt": "book",
+    "title": "흔한남매 별난 세계 여행 1: 세계 유명 박물관",
+    "price": "12,600"
+  }
+}
