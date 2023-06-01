@@ -354,7 +354,7 @@ window.onload = function () {
   });
 
   // 오늘의 도서 json 연동
-  let bookdata;
+  let bookdata = null;
   fetch('./bookdata.json')
     .then(response => response.json())
     .then(result => {
