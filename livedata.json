@@ -1,0 +1,72 @@
+[
+  {
+    "link": "#",
+    "alt": "라이브",
+    "cate":"방송예정",
+    "pic": "live1.jpg",
+    "title": "[제주신화월드] 랜딩관/신화관/서머셋",
+    "date":"06월 02일 (금)",
+    "time":"19:00",
+
+    "thumbPic":"",
+    "desc":"",
+    "sale":"",
+    "price": ""
+  },
+  {
+    "link": "#",
+    "alt": "라이브",
+    "cate":"VOD",
+    "pic": "live2.jpg",
+    "title": "엄지렐라와 함께하는! 단 하루, 진에어 항공권 특가!",
+    "date":"04월 27일 (목요일)",
+    "time":"16:00",
+
+    "thumbPic":"",
+    "desc":"",
+    "sale":"",
+    "price": ""
+  },
+  {
+    "link": "#",
+    "alt": "라이브",
+    "cate":"방송예정",
+    "pic": "live3.jpg",
+    "title": "[이달의 여행] 하와이 여행의 특가를 다 모았다!",
+    "date":"04월 27일 (목요일)",
+    "time":"16:00",
+
+    "thumbPic":"",
+    "desc":"",
+    "sale":"",
+    "price": ""
+  },
+  {
+    "link": "#",
+    "alt": "라이브",
+    "cate":"VOD",
+    "pic": "live4.jpg",
+    "title": "[오사카 에어텔] 2박 3일 일정 339,000원 부터",
+    "date":"",
+    "time":"",
+
+    "thumbPic":"live_thumb4.jpg",
+    "desc":"[오사카 자유여행] 티웨이 항공+오사카 시내 호텔 2박3일",
+    "sale":"24",
+    "price": "339,000"
+  },
+  {
+    "link": "#",
+    "alt": "라이브",
+    "cate":"VOD",
+    "pic": "live5.jpg",
+    "title": "[2023 대한민국 숙박세일 페스타] 강릉 세인트존스/해운대 라마다 앙코르 특가 LIVE!",
+    "date":"",
+    "time":"",
+
+    "thumbPic":"live1.jpg",
+    "desc":"라마다 앙코르 바이 윈덤 부산 해운대",
+    "sale":"86",
+    "price": "35,500"
+  }
+]
