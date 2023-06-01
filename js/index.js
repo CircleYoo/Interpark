@@ -333,7 +333,8 @@ window.onload = function () {
     .then(response => response.json())
     .then(result => {
       livedata = result;
-    })
+    });
+  // function makeLiveList(items) {}
   let liveSwiper = new Swiper(".sw-live", {
     slidesPerView: 4,
     spaceBetween: 10,
