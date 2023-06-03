@@ -175,7 +175,8 @@ window.onload = function () {
     });
   }
 
-  let tourData;
+  // tour Swiper
+  let tourData = null;
   // const tourXhttp = new XMLHttpRequest();
   // tourXhttp.onreadystatechange = function (event) {
   //   const req = event.target;
@@ -196,8 +197,8 @@ window.onload = function () {
 
   function makeTourSlide() {
     let swTourHtml = ``;
-    for (let i = 0; i < tourData.tour_total; i++) {
-      let obj = tourData[`tour_${i + 1}`];
+    for (let i = 0; i < tourData.length; i++) {
+      let obj = tourData[i];
       let temp = `
       <div class="swiper-slide">
         <a href="${obj.link}" class="tour-link">
@@ -228,7 +229,7 @@ window.onload = function () {
       swTourHtml += temp;
     }
 
-    let swTourWrapper = document.querySelector(".sw-tour .swiper-wrapper");
+    const swTourWrapper = document.querySelector(".sw-tour .swiper-wrapper");
     swTourWrapper.innerHTML = swTourHtml;
 
     let tourSwiper = new Swiper(".sw-tour", {
