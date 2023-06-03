@@ -328,31 +328,72 @@ window.onload = function () {
     });
   }
 
-  let livedata;
+  let livedata = null;
   fetch('./livedata.json')
     .then(response => response.json())
     .then(result => {
       livedata = result;
+      makeLiveSlide();
     });
-  // function makeLiveList(items) {}
-  let liveSwiper = new Swiper(".sw-live", {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".live .sw-next",
-      prevEl: ".live .sw-prev",
-    },
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 32,
+  function makeLiveSlide() {
+    let html = ``;
+    for (let i = 0; i < livedata.length; i++) {
+      let obj = livedata[i];
+      let temp = `
+        <div class="swiper-slide">
+          <a href="${obj.link}" class="live-link">
+            <div class="live-img">
+              <img src="images/${obj.pic}" alt="${obj.alt}" />
+            </div>
+            <div class="live-info">
+              <div class="live-info-top">
+                <span class="live-info-cate">${obj.cate}</span>
+                <p class="live-info-title">${obj.title}</p>
+              </div>
+              <div class="live-info-main">
+                <p class="live-info-date">${obj.date}</p>
+                <p class="live-info-time">${obj.time}</p>
+              </div>
+              <div class="live-info-bottom clearfix">
+                <div class="live-info-thumb">
+                  <img src="images/${obj.thumbPic}" alt="" />
+                </div>
+                <div class="live-info-desc">
+                  <p class="live-info-desc-title">${obj.desc}</p>
+                  <p class="live-info-desc-price">
+                    <em>${obj.sale}%</em> <b>${obj.price}</b>원
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      `
+      html += temp;
+    }
+
+    const swLiveWrapper = document.querySelector('.sw-live .swiper-wrapper')
+    swLiveWrapper.innerHTML = html;
+
+    let liveSwiper = new Swiper(".sw-live", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".live .sw-next",
+        prevEl: ".live .sw-prev",
       },
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 27,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 27,
+        },
       },
-    },
-  });
+    });
+  }
 
   // 오늘의 도서 json 연동
   let bookdata = null;
