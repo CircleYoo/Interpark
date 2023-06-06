@@ -1,73 +1,79 @@
-{
-  "good_count": 10,
-  "good_1": {
+[
+  {
     "link": "#",
-    "pic": "good1.png",
-    "product": "맥 MAC 립스틱",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good1.jpg",
+    "product": "삼성전자 올인원 일체형PC DM530ADA-L78A 인텔 i7 삼성컴퓨터",
+    "ratio": 21,
+    "price": "999,000"
   },
-  "good_2": {
+  {
     "link": "#",
     "pic": "good2.jpg",
-    "product": "[장터할매]2023년 햇양파 중품/짱아치용 특품 3kg~10kg",
-    "ratio": 5,
-    "price": "11,950"
+    "product": "★아이팝★ [무료배송] 팔도 미니 왕뚜껑 오리지날 80g 16개",
+    "ratio": 3,
+    "price": "12,500"
   },
-  "good_3": {
+  {
     "link": "#",
     "pic": "good3.jpg",
-    "product": " QCY GTS 스마트워치 2세대 블랙/ 블루투스 통화가능/실리콘 스트랩 메탈 스트랩 TPU 보호필름 추가구매",
-    "ratio": 5,
-    "price": "11,950"
+    "product": "QCY T13 ANC 노이즈캔슬링 무선 블루투스 이어폰",
+    "ratio": 9,
+    "price": "19,430"
   },
-  "good_4": {
+  {
     "link": "#",
     "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "product": "*APP쿠폰 16,120원* [베베당] 아기간식 쌀과자 구름사또 골고루 9봉 세트",
+    "ratio": 10,
+    "price": "10,710"
   },
-  "good_5": {
+  {
     "link": "#",
-    "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good5.jpg",
+    "product": "경남 하우스 수박 3~7키로",
+    "ratio": 36,
+    "price": "7,950"
   },
-  "good_6": {
+  {
     "link": "#",
-    "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good6.jpg",
+    "product": "★6/2~4★ 5% 다운로드 쿠폰 혜택! 게이밍 1인용 컴퓨터 책상 GD001 1200",
+    "ratio": 20,
+    "price": "78,850"
   },
-  "good_7": {
+  {
     "link": "#",
-    "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good7.jpg",
+    "product": "[한정수량] 25W 초고속 충전기 어댑터 + 고속충전 케이블 증정",
+    "ratio": 2,
+    "price": "7,410"
   },
-  "good_8": {
+  {
     "link": "#",
-    "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good8.jpg",
+    "product": "*APP쿠폰 9,710원* [베베당] 유기농 롱스틱 골고루 20봉 세트(+미니스틱 2봉증정)",
+    "ratio": 10,
+    "price": "28,710"
   },
-  "good_9": {
+  {
     "link": "#",
-    "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good9.jpg",
+    "product": "시원한 쿨 스포츠타올 쿨방석 아이스롤러 넥선풍기 외 여름 상품 모음",
+    "ratio": 20,
+    "price": "4,000"
   },
-  "good_10": {
+  {
     "link": "#",
-    "pic": "good4.jpg",
-    "product": "[베베당] 유기농 롱스틱 골고루 10봉 세트",
-    "ratio": 5,
-    "price": "11,950"
+    "pic": "good10.jpg",
+    "product": "카카오프렌즈 춘식이 캔소맥잔 워터보틀 드링크자 외 25종 모음",
+    "ratio": 40,
+    "price": "2,900"
+  },
+  {
+    "link": "#",
+    "pic": "good11.jpg",
+    "product": "농심 백산수 무라벨 2L 18병 생수",
+    "ratio": 15,
+    "price": "15,700"
   }
-}
+]

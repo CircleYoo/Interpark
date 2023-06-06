@@ -107,9 +107,8 @@ window.onload = function () {
   
   function makeShoppingSlide() {
     let swShoppingHtml = ``;
-    for (let i = 0; i < shoppingData.good_count; i++) {
-      let obj = shoppingData[`good_${i + 1}`];
-
+    for (let i = 0; i < shoppingData.length; i++) {
+      let obj = shoppingData[i];
       let temp = `
         <div class="swiper-slide">
           <a href="${obj.link}" class="good">
@@ -126,10 +125,22 @@ window.onload = function () {
         </div>
       `;
       swShoppingHtml += temp;
+
     }
-    let swShoppingWrapper = document.querySelector(
-      ".sw-shopping .swiper-wrapper"
-    );
+
+    // 전체보기 버튼
+    let swShoppingBtn = `
+          <div class="swiper-slide"> 
+            <a href="#" alt="쇼핑 전체보기">
+              <i></i>
+              전체보기
+            </a>
+          </div>
+    `;
+
+    swShoppingHtml += swShoppingBtn;
+    
+    const swShoppingWrapper = document.querySelector(".sw-shopping .swiper-wrapper");
     swShoppingWrapper.innerHTML = swShoppingHtml;
 
     let shoppingSwiper = new Swiper(".sw-shopping", {
