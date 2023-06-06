@@ -107,10 +107,11 @@ window.onload = function () {
   
   function makeShoppingSlide() {
     let swShoppingHtml = ``;
+
     for (let i = 0; i < shoppingData.length; i++) {
       let obj = shoppingData[i];
       let temp = `
-        <div class="swiper-slide">
+        <div class="swiper-slide shopping-item">
           <a href="${obj.link}" class="good">
             <img src="images/${obj.pic}" alt="${obj.product}" />
             <div class="good-info">
@@ -125,17 +126,16 @@ window.onload = function () {
         </div>
       `;
       swShoppingHtml += temp;
-
     }
 
     // 전체보기 버튼
     let swShoppingBtn = `
-          <div class="swiper-slide"> 
-            <a href="#" alt="쇼핑 전체보기">
-              <i></i>
-              전체보기
-            </a>
-          </div>
+      <div class="swiper-slide shopping-item shopping-btnMore"> 
+        <a href="#" alt="쇼핑 전체보기">
+          <i></i>
+          전체보기
+        </a>
+      </div>
     `;
 
     swShoppingHtml += swShoppingBtn;
@@ -147,7 +147,7 @@ window.onload = function () {
       slidesPerView: 5,
       grid: {
         rows: 2,
-        // column: 2,
+        column: 2,
         fill: "row",
       },
       spaceBetween: 10,
@@ -183,6 +183,7 @@ window.onload = function () {
           },
         },
       },
+      // freeMode : true
     });
   }
 
