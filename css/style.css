@@ -3,6 +3,7 @@
 :root {
   --text-color: #111;
   --accenct-color: #1769ff;
+  --red-color: #ef3e43;
   --white: #fff;
   --gray-color: #f8f8fa;
 }
@@ -576,7 +577,7 @@ body {
   white-space: nowrap;
 }
 .good-info-list li b span {
-  color: #ef3e43;
+  color: var(--red-color);
 }
 .good-info-list li p {
   /* 3. display: -webkit-box */
@@ -817,8 +818,17 @@ body {
   line-height: 2.4rem;
   font-size: 1.1rem;
   padding: 0 0.8rem;
-  color: #ef3e43;
+  color: var(--red-color);
   border: 1px solid rgba(239, 62, 67, 0.3);
+  border-radius: 3px;
+}
+.ticket-seat {
+  display: inline-block;
+  line-height: 2.4rem;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+  color: var(--accenct-color);
+  border: 1px solid rgba(74, 107, 255, 0.3);
   border-radius: 3px;
 }
 
@@ -971,7 +981,7 @@ body {
 }
 
 .live-info-desc-price em {
-  color: #ef3e43;
+  color: var(--red-color);
   font-size: 2rem;
   line-height: 24px;
   font-weight: 700;

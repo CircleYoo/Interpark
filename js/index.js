@@ -288,8 +288,17 @@ window.onload = function () {
     })
   function makeTicketSlide() {
     let html = ``;
-    for (let i = 0; i < ticketData.ticket_total; i++) {
-      let obj = ticketData[`ticket_${i + 1}`];
+    for (let i = 0; i < ticketData.length; i++) {
+      let obj = ticketData[i];
+      let sale = '';
+      let seat = '';
+
+      if (obj.sale !== null) {
+        sale = `<li><span class="ticket-sale">${obj.sale}</span></li>`
+      } else if (obj.seat !== null) {
+        seat = `<li><span class="ticket-seat">${obj.seat}</span></li>`
+      }
+
       let temp = `
         <div class="swiper-slide">
           <a href="${obj.link}" class="ticket-link">
@@ -308,7 +317,8 @@ window.onload = function () {
                 <li>
                   <span class="ticket-date">${obj.date}</span>
                 </li>
-                <li><span class="ticket-sale">${obj.sale}</span></li>
+                ${sale}
+                ${seat}
               </ul>
             </div>
           </a>
