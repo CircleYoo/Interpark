@@ -235,9 +235,9 @@
 .ticket-img {
   height: 20rem;
 }
-.ticket-img img {
+/* .ticket-img img {
   transform: translate(-50%, -50%) scale(1.4);
-}
+} */
 
 .sw-ticket .swiper-slide {
   width: 15rem;

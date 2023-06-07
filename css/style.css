@@ -540,6 +540,7 @@ body {
 }
 .shopping-item {
   /* width: 15rem; */
+  height: fit-content;
 }
 .good {
   display: block;
@@ -561,8 +562,9 @@ body {
 }
 .good-info {
   background: var(--white);
-  text-align: left;
+  height: 10.6rem;
   padding: 2rem;
+  text-align: left;
 }
 
 .good-info-list {
@@ -674,7 +676,7 @@ body {
 }
 .tour-info-list li {
   position: relative;
-  margin-bottom: 3px;
+  margin: 0.4rem 0;
 }
 
 .tour-cate {
@@ -684,16 +686,16 @@ body {
   left: 0;
   background: var(--accenct-color);
   font-size: 1.4rem;
-  line-height: 32px;
+  line-height: 3.2rem;
   color: var(--white);
   font-weight: 700;
-  padding: 0 10px;
-  border-radius: 3px;
+  padding: 0 1.2rem;
+  border-radius: 0.3rem;
 }
 .tour-title {
   display: block;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: var(--accenct-color);
   /* 1줄 말줄임 ...  */
   overflow: hidden;
@@ -701,11 +703,12 @@ body {
   white-space: nowrap;
 }
 .tour-place {
+  font-size: 1.5rem;
 }
 .tour-price {
   color: var(--text-color);
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 .tour-price b {
   font-weight: 700;
@@ -735,18 +738,18 @@ body {
 .ticket-img {
   position: relative;
   width: 100%;
-  max-height: 400px;
+  max-height: 40rem;
   height: 40rem;
   overflow: hidden;
 
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .ticket-img img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1);
 
   width: 100%;
 }
@@ -1018,29 +1021,34 @@ body {
 .books-img {
   position: relative;
   width: 100%;
-  height: 335px;
+  height: 33.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .books-img img {
   position: absolute;
-  top: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
+  max-height: 100%;
+  transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .books-info {
   text-align: center;
 }
 .books-info-title {
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   /* 1줄 말줄임 */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 8px 0;
+  margin: 0.8rem 0;
 }
 
 .books-info-price {
