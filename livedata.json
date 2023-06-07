@@ -8,10 +8,10 @@
     "date":"06월 02일 (금)",
     "time":"19:00",
 
-    "thumbPic":"",
-    "desc":"",
-    "sale":"",
-    "price": ""
+    "thumbPic": null,
+    "desc": null,
+    "sale": null,
+    "price": null
   },
   {
     "link": "#",
@@ -22,10 +22,10 @@
     "date":"04월 27일 (목요일)",
     "time":"16:00",
 
-    "thumbPic":"",
-    "desc":"",
-    "sale":"",
-    "price": ""
+    "thumbPic": null,
+    "desc": null,
+    "sale": null,
+    "price": null
   },
   {
     "link": "#",
@@ -36,10 +36,10 @@
     "date":"04월 27일 (목요일)",
     "time":"16:00",
 
-    "thumbPic":"",
-    "desc":"",
-    "sale":"",
-    "price": ""
+    "thumbPic": null,
+    "desc": null,
+    "sale": null,
+    "price": null
   },
   {
     "link": "#",

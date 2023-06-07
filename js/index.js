@@ -345,13 +345,24 @@ window.onload = function () {
   fetch('./livedata.json')
     .then(response => response.json())
     .then(result => {
+      console.log(result);
       livedata = result;
       makeLiveSlide();
+    })
+    .catch(error => {
+      console.log('liveData Error', error);
     });
+    
+  
   function makeLiveSlide() {
     let html = ``;
     for (let i = 0; i < livedata.length; i++) {
       let obj = livedata[i];
+      let thumbPic = obj.thumbPic !== null ? `<img src="images/${obj.thumbPic}" alt="" />` : '';
+      let desc = obj.desc !== null ? `<p class="live-info-desc-title">${obj.desc}</p>` : '';
+      let sale = obj.sale !== null ? `<em>${obj.sale}%</em>` : '';
+      let price = obj.price !== null ? `<b>${obj.price}</b>원` : '';
+
       let temp = `
         <div class="swiper-slide">
           <a href="${obj.link}" class="live-link">
@@ -369,12 +380,12 @@ window.onload = function () {
               </div>
               <div class="live-info-bottom clearfix">
                 <div class="live-info-thumb">
-                  <img src="images/${obj.thumbPic}" alt="" />
+                  ${thumbPic}
                 </div>
                 <div class="live-info-desc">
-                  <p class="live-info-desc-title">${obj.desc}</p>
+                  ${desc}
                   <p class="live-info-desc-price">
-                    <em>${obj.sale}%</em> <b>${obj.price}</b>원
+                    ${sale} ${price}
                   </p>
                 </div>
               </div>
