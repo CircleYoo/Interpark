@@ -100,7 +100,6 @@ window.onload = function () {
   shoppingBtn.forEach((item) => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
-
       shoppingBtn.forEach(btn => btn.classList.remove('btns-active'))
       this.classList.add('btns-active')
     })
@@ -300,64 +299,80 @@ window.onload = function () {
     });
   }
 
-  // ticket button
-  let ticketBtn = document.querySelectorAll('.ticket .btns a');
-  ticketBtn.forEach((item) => {
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
+// ticket button
+let ticketBtn = document.querySelectorAll('.ticket .btns a');
+let newData = [];
 
-      ticketBtn.forEach(btn => btn.classList.remove('btns-active'))
-      this.classList.add('btns-active')
-    })
-  })
-  // 티켓 json 연동
-  let ticketData;
-  fetch('./ticketdata.json')
-    .then(response => response.json())
-    .then(result => {
-      ticketData = result;
-      makeTicketSlide();
-    })
-  function makeTicketSlide() {
-    let html = ``;
-    for (let i = 0; i < ticketData.length; i++) {
-      let obj = ticketData[i];
-      let sale = '';
-      let seat = '';
+ticketBtn.forEach((item, index) => {
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
 
-      if (obj.sale !== null) {
-        sale = `<li><span class="ticket-sale">${obj.sale}</span></li>`
-      } else if (obj.seat !== null) {
-        seat = `<li><span class="ticket-seat">${obj.seat}</span></li>`
-      }
+    ticketBtn.forEach(btn => btn.classList.remove('btns-active'))
+    this.classList.add('btns-active');
 
-      let temp = `
-        <div class="swiper-slide">
-          <a href="${obj.link}" class="ticket-link">
-            <div class="ticket-img">
-              <img src="images/${obj.poster}" alt="${obj.title}" />
-              <span class="ticket-rank">${obj.rank}</span>
-            </div>
-            <div class="ticket-info">
-              <ul class="ticket-info-list">
-                <li>
-                  <span class="ticket-title">${obj.title}</span>
-                </li>
-                <li>
-                  <span class="ticket-hall">${obj.hall}</span>
-                </li>
-                <li>
-                  <span class="ticket-date">${obj.date}</span>
-                </li>
-                ${sale}
-                ${seat}
-              </ul>
-            </div>
-          </a>
-        </div>
-      `;
-      html += temp;
+    if (index === 0) {
+      newData = ticketData.musical;
+    } else if (index === 1) {
+      newData = ticketData.concert;
+    } else if (index === 2) {
+      newData = ticketData.play;
     }
+
+    console.log(newData);
+    makeTicketSlide(newData);
+  })
+})
+
+// 티켓 json 연동
+let ticketData;
+fetch('./ticketdata-copy.json')
+  .then(response => response.json())
+  .then(result => {
+    ticketData = result;
+    console.log(result);
+    makeTicketSlide(ticketData.musical);
+  })
+  
+function makeTicketSlide(data) {
+  let html = ``;
+  for (let i = 0; i < data.length; i++) {
+    let obj = data[i];
+    let sale = '';
+    let seat = '';
+
+    if (obj.sale !== null) {
+      sale = `<li><span class="ticket-sale">${obj.sale}</span></li>`;
+    } else if (obj.seat !== null) {
+      seat = `<li><span class="ticket-seat">${obj.seat}</span></li>`;
+    }
+
+    let temp = `
+      <div class="swiper-slide">
+        <a href="${obj.link}" class="ticket-link">
+          <div class="ticket-img">
+            <img src="images/${obj.poster}" alt="${obj.title}" />
+            <span class="ticket-rank">${obj.rank}</span>
+          </div>
+          <div class="ticket-info">
+            <ul class="ticket-info-list">
+              <li>
+                <span class="ticket-title">${obj.title}</span>
+              </li>
+              <li>
+                <span class="ticket-hall">${obj.hall}</span>
+              </li>
+              <li>
+                <span class="ticket-date">${obj.date}</span>
+              </li>
+              ${sale}
+              ${seat}
+            </ul>
+          </div>
+        </a>
+      </div>
+    `;
+    html += temp;
+  }
     const swTicketWrapper = document.querySelector(
       ".sw-ticket .swiper-wrapper"
     );
