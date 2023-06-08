@@ -187,6 +187,18 @@ window.onload = function () {
     });
   }
 
+  // tour button
+  let tourBtn = document.querySelectorAll('.tour .btns a');
+  console.log(tourBtn)
+  tourBtn.forEach((item) => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      // ↓ 모든 버튼에서 class 제거
+      tourBtn.forEach(btn => btn.classList.remove('btns-active'))
+      this.classList.add('btns-active')
+    })
+  })
+
   // tour Swiper
   let tourData = null;
   // const tourXhttp = new XMLHttpRequest();
@@ -278,6 +290,15 @@ window.onload = function () {
     });
   }
 
+  // ticket button
+  let ticketBtn = document.querySelectorAll('.ticket .btns a');
+  ticketBtn.forEach((item) => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      ticketBtn.forEach(btn => btn.classList.remove('btns-active'))
+      this.classList.add('btns-active')
+    })
+  })
   // 티켓 json 연동
   let ticketData;
   fetch('./ticketdata.json')
@@ -355,7 +376,6 @@ window.onload = function () {
   fetch('./livedata.json')
     .then(response => response.json())
     .then(result => {
-      console.log(result);
       livedata = result;
       makeLiveSlide();
     })
