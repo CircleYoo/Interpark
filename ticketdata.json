@@ -1,72 +1,434 @@
-[
-  {
-    "link": "",
-    "poster": "musical1.gif",
-    "rank": 1,
-    "title": "뮤지컬 〈시카고〉 25주년 기념 오리지널 내한",
-    "hall": "블루스퀘어 신한카드홀",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": "단독판매",
-    "seat": null
-  },
-  {
-    "link": "",
-    "poster": "musical2.gif",
-    "rank": 2,
-    "title": "뮤지컬 〈베르나르다 알바〉",
-    "hall": "국립정동극장(서울)",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": "단독판매",
-    "seat": null
-  },
-  {
-    "link": "",
-    "poster": "musical3.gif",
-    "rank": 3,
-    "title": "뮤지컬 데스노트 (The Musical Death Note) - 부산",
-    "hall": "부산시민회관 대극장",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": null,
-    "seat": "자석우위"
-  },
-  {
-    "link": "",
-    "poster": "musical4.gif",
-    "rank": 4,
-    "title": "뮤지컬 〈맘마미아!〉",
-    "hall": "충무아트센터 대극장",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": "단독판매",
-    "seat": null
-  },
-  {
-    "link": "",
-    "poster": "musical5.gif",
-    "rank": 5,
-    "title": "뮤지컬 〈모차르트!〉",
-    "hall": "세종문화회관 대극장",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": null,
-    "seat": null
-  },
-  {
-    "link": "",
-    "poster": "musical6.gif",
-    "rank": 6,
-    "title": "뮤지컬 데스노트 (The Musical Death Note) - 대구",
-    "hall": "계명아트센터",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": null,
-    "seat": "자석우위"
-  },
-  {
-    "link": "",
-    "poster": "musical7.gif",
-    "rank": 7,
-    "title": "뮤지컬 〈쿠로이 저택엔 누가 살고 있을까？〉",
-    "hall": "플러스씨어터",
-    "date": "2023.03.17 - 2023.05.21",
-    "sale": null,
-    "seat": null
-  }
-]
+{ 
+  "musical" : [
+    {
+      "link": "",
+      "poster": "musical1.gif",
+      "rank": 1,
+      "title": "뮤지컬 〈시카고〉 25주년 기념 오리지널 내한",
+      "hall": "블루스퀘어 신한카드홀",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical2.gif",
+      "rank": 2,
+      "title": "뮤지컬 〈베르나르다 알바〉",
+      "hall": "국립정동극장(서울)",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical3.gif",
+      "rank": 3,
+      "title": "뮤지컬 데스노트 (The Musical Death Note) - 부산",
+      "hall": "부산시민회관 대극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": "자석우위"
+    },
+    {
+      "link": "",
+      "poster": "musical4.gif",
+      "rank": 4,
+      "title": "뮤지컬 〈맘마미아!〉",
+      "hall": "충무아트센터 대극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical5.gif",
+      "rank": 5,
+      "title": "뮤지컬 〈모차르트!〉",
+      "hall": "세종문화회관 대극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical6.gif",
+      "rank": 6,
+      "title": "뮤지컬 데스노트 (The Musical Death Note) - 대구",
+      "hall": "계명아트센터",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": "자석우위"
+    },
+    {
+      "link": "",
+      "poster": "musical7.gif",
+      "rank": 7,
+      "title": "뮤지컬 〈쿠로이 저택엔 누가 살고 있을까？〉",
+      "hall": "플러스씨어터",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    }
+  ],
+  "play" : [
+    {
+      "link": "",
+      "poster": "play1.gif",
+      "rank": 1,
+      "title": "연극 〈테베랜드〉",
+      "hall": "충무아트센터 중극장 블랙",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "play2.gif",
+      "rank": 2,
+      "title": "연극 〈이것은 사랑이야기가 아니다〉",
+      "hall": "국립정동극장_세실(서울)",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "play3.gif",
+      "rank": 3,
+      "title": "대학로 1위 연극 〈쉬어매드니스〉",
+      "hall": "콘텐츠박스(KONTENTZ BOX)",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "play4.gif",
+      "rank": 4,
+      "title": "연극 ＇리어왕 : KING LEAR＇",
+      "hall": "LG아트센터 서울 LG SIGNATURE 홀",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "play5.gif",
+      "rank": 5,
+      "title": "연극 〈온 더 비트〉",
+      "hall": "대학로 TOM(티오엠) 2관",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "play6.gif",
+      "rank": 6,
+      "title": "연극 〈라스트 세션〉",
+      "hall": "대학로 TOM(티오엠) 1관",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "play7.gif",
+      "rank": 7,
+      "title": "연극 〈폭풍의 언덕〉",
+      "hall": "드림아트센터 2관",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    }
+  ],
+  "classic" : [
+    {
+      "link": "",
+      "poster": "classic1.gif",
+      "rank": 1,
+      "title": "국립발레단_KNB Movement Series 8",
+      "hall": "예술의전당 CJ 토월극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "classic2.gif",
+      "rank": 2,
+      "title": "신카이 마코토 영화음악콘서트 2023 〈서울 앙코르〉 Master Piece",
+      "hall": "롯데콘서트홀",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "classic3.gif",
+      "rank": 3,
+      "title": "히사이시 조 영화음악 콘서트 2023_서울 앙코르(7월)",
+      "hall": "롯데콘서트홀",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "classic4.gif",
+      "rank": 4,
+      "title": "유니버설발레단 〈백조의 호수〉",
+      "hall": "예술의전당 오페라극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "classic5.gif",
+      "rank": 5,
+      "title": "동구문화체육센터 베토벤X클림트 〈운명의 키스〉",
+      "hall": "동구문화체육센터 공연장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "classic6.gif",
+      "rank": 6,
+      "title": "조수미 콘서트 In Love - 성남",
+      "hall": "성남아트센터 오페라하우스",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "classic7.gif",
+      "rank": 7,
+      "title": "국립심포니오케스트라 〈시네마 클래식 데이〉 - 세종시",
+      "hall": "세종예술의전당(세종특별자치시)",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    }
+  ],
+  "sports" : [
+    {
+      "link": "",
+      "poster": "sports-kiwoom.gif",
+      "rank": 1,
+      "title": "키움 vs KIA (6.15)",
+      "hall": "고척스카이돔",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "sports-bears.gif",
+      "rank": 2,
+      "title": "두산 vs KIA (6.9)",
+      "hall": "잠실야구장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "sports-bears.gif",
+      "rank": 3,
+      "title": "두산 vs 한화 (6.8)",
+      "hall": "잠실야구장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "sports-kiwoom.gif",
+      "rank": 4,
+      "title": "키움 vs LG (6.8)",
+      "hall": "고척스카이돔",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "sports-wings.gif",
+      "rank": 5,
+      "title": "수원삼성 vs 인천유나이티드 (6.11)",
+      "hall": "수원월드컵경기장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "sports-bears.gif",
+      "rank": 6,
+      "title": "두산 vs KIA (6.11)",
+      "hall": "잠실야구장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "sports-bears.gif",
+      "rank": 7,
+      "title": "두산 vs KIA (6.10)",
+      "hall": "잠실야구장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    }
+  ],
+  "leisure" : [
+    {
+      "link": "",
+      "poster": "leisure1.gif",
+      "rank": 1,
+      "title": "2023 노을캠핑장",
+      "hall": "월드컵공원 노을캠핑장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "leisure2.gif",
+      "rank": 2,
+      "title": "노을진(進)캠핑장(전 수도권매립지캠핑장)",
+      "hall": "노을진(進)캠핑장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "leisure3.gif",
+      "rank": 3,
+      "title": "고양시 킨텍스 캠핑장",
+      "hall": "킨텍스 캠핑장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "leisure4.gif",
+      "rank": 4,
+      "title": "한탄강 오토캠핑장",
+      "hall": "한탄강캠핑장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "leisure5.gif",
+      "rank": 5,
+      "title": "연천재인폭포오토캠핑장",
+      "hall": "연천재인폭포오토캠핑장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "leisure6.gif",
+      "rank": 6,
+      "title": "영천시 보현산천문과학관(2023.04~)",
+      "hall": "영천시 보현산 천문과학관",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "leisure7.gif",
+      "rank": 7,
+      "title": "평택 진위천유원지 캠핑장",
+      "hall": "진위천유원지",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    }
+  ],
+  "exhibition" : [
+    {
+      "link": "",
+      "poster": "musical1.gif",
+      "rank": 1,
+      "title": "뮤지컬 〈시카고〉 25주년 기념 오리지널 내한",
+      "hall": "블루스퀘어 신한카드홀",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical2.gif",
+      "rank": 2,
+      "title": "뮤지컬 〈베르나르다 알바〉",
+      "hall": "국립정동극장(서울)",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical3.gif",
+      "rank": 3,
+      "title": "뮤지컬 데스노트 (The Musical Death Note) - 부산",
+      "hall": "부산시민회관 대극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": "자석우위"
+    },
+    {
+      "link": "",
+      "poster": "musical4.gif",
+      "rank": 4,
+      "title": "뮤지컬 〈맘마미아!〉",
+      "hall": "충무아트센터 대극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": "단독판매",
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical5.gif",
+      "rank": 5,
+      "title": "뮤지컬 〈모차르트!〉",
+      "hall": "세종문화회관 대극장",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    },
+    {
+      "link": "",
+      "poster": "musical6.gif",
+      "rank": 6,
+      "title": "뮤지컬 데스노트 (The Musical Death Note) - 대구",
+      "hall": "계명아트센터",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": "자석우위"
+    },
+    {
+      "link": "",
+      "poster": "musical7.gif",
+      "rank": 7,
+      "title": "뮤지컬 〈쿠로이 저택엔 누가 살고 있을까？〉",
+      "hall": "플러스씨어터",
+      "date": "2023.03.17 - 2023.05.21",
+      "sale": null,
+      "seat": null
+    }
+  ]
+}

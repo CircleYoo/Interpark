@@ -301,7 +301,7 @@ window.onload = function () {
 
 // ticket button
 let ticketBtn = document.querySelectorAll('.ticket .btns a');
-let newData = [];
+let ticketCategories = ['musical', 'play', 'classic', 'sports', 'leisure', 'exhibition'];
 
 ticketBtn.forEach((item, index) => {
   item.addEventListener('click', function(e) {
@@ -310,13 +310,8 @@ ticketBtn.forEach((item, index) => {
     ticketBtn.forEach(btn => btn.classList.remove('btns-active'))
     this.classList.add('btns-active');
 
-    if (index === 0) {
-      newData = ticketData.musical;
-    } else if (index === 1) {
-      newData = ticketData.concert;
-    } else if (index === 2) {
-      newData = ticketData.play;
-    }
+    let category = ticketCategories[index];
+    newData = ticketData[category]
 
     console.log(newData);
     makeTicketSlide(newData);
@@ -325,7 +320,7 @@ ticketBtn.forEach((item, index) => {
 
 // 티켓 json 연동
 let ticketData;
-fetch('./ticketdata-copy.json')
+fetch('./ticketdata.json')
   .then(response => response.json())
   .then(result => {
     ticketData = result;
