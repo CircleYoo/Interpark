@@ -95,6 +95,16 @@ window.onload = function () {
     });
   }
 
+  // Shopping button
+  let shoppingBtn = document.querySelectorAll('.shopping .btns a');
+  shoppingBtn.forEach((item) => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      shoppingBtn.forEach(btn => btn.classList.remove('btns-active'))
+      this.classList.add('btns-active')
+    })
+  })
   // <!-- Shopping Swiper -->
   let shoppingData;
   fetch('./shoppingdata.json')
@@ -295,6 +305,7 @@ window.onload = function () {
   ticketBtn.forEach((item) => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
+
       ticketBtn.forEach(btn => btn.classList.remove('btns-active'))
       this.classList.add('btns-active')
     })
@@ -449,6 +460,16 @@ window.onload = function () {
     });
   }
 
+  // 오늘의 도서 button
+  let bookBtn = document.querySelectorAll('.books .btns a');
+  bookBtn.forEach((item) => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      bookBtn.forEach(btn => btn.classList.remove('btns-active'))
+      this.classList.add('btns-active')
+    })
+  })
   // 오늘의 도서 json 연동
   let bookdata = null;
   fetch('./bookdata.json')
