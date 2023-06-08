@@ -301,19 +301,21 @@ window.onload = function () {
 
 // ticket button
 let ticketBtn = document.querySelectorAll('.ticket .btns a');
+// json데이터 - 배열 카테고리로 관리
 let ticketCategories = ['musical', 'play', 'classic', 'sports', 'leisure', 'exhibition'];
 
 ticketBtn.forEach((item, index) => {
   item.addEventListener('click', function(e) {
     e.preventDefault();
 
+    // 클래스 변경
     ticketBtn.forEach(btn => btn.classList.remove('btns-active'))
     this.classList.add('btns-active');
 
+    // 카테고리 변경
     let category = ticketCategories[index];
     newData = ticketData[category]
 
-    console.log(newData);
     makeTicketSlide(newData);
   })
 })
@@ -324,7 +326,6 @@ fetch('./ticketdata.json')
   .then(response => response.json())
   .then(result => {
     ticketData = result;
-    console.log(result);
     makeTicketSlide(ticketData.musical);
   })
   
