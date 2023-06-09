@@ -128,8 +128,7 @@
 }
 
 .service-list {
-  display: inline-block;
-  float: none;
+  display: inherit;
   margin-top: 0px;
 }
 
@@ -241,7 +240,31 @@
 /* .ticket-img img {
   transform: translate(-50%, -50%) scale(1.4);
 } */
-
+.ticket-info {
+  padding: 1rem 0.4rem;
+}
+.ticket-info-list li:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+.ticket-title {
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.ticket-hall {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+.ticket-date {
+  font-size: 1.2rem;
+  line-height: 1.4rem;  
+}
+.ticket-sale,
+.ticket-seat {
+  line-height: 1.8rem;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
 .sw-ticket .swiper-slide {
   width: 15rem;
 }
@@ -309,6 +332,9 @@
 }
 
 /* 오늘의 도서 */
+.books .section-slide {
+  height: auto;
+}
 .books-img {
   height: 32rem;
 }

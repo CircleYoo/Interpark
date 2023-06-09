@@ -509,7 +509,7 @@ function makeTicketSlide(data) {
     .then(response => response.json())
     .then(result => {
       bookData = result;
-      bookSilde(bookData.sale);
+      bookSilde(bookData.MD_book);
     })
   function bookSilde(data) {
     let html = ``;

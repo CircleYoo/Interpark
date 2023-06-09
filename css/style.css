@@ -80,13 +80,12 @@ body {
   z-index: 99;
 }
 .sw-bt::before {
-  display: block;
-  position: absolute;
-  top: calc(50% - 8px);
-  left: calc(50% - 4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   content: "";
-  width: 8px;
-  height: 1rem;
   background: url("../images/slider_arrow.svg") no-repeat center;
 }
 .sw-prev::before {
@@ -774,46 +773,44 @@ body {
 }
 
 .ticket-info {
-  padding: 1rem 0.4rem;
+  padding: 1.6rem 0.8rem;
   background: var(--white);
 }
-
-.ticket-info-list li {
-  margin-bottom: 5px;
-}
-.ticket-info-list li:first-child {
-  margin-bottom: 0px;
+.ticket-info-list li:not(:last-child) {
+  margin-bottom: 0.7rem;
 }
 .ticket-title {
   /* 2줄 ... 처리 */
   display: -webkit-box;
-  overflow: hidden;
-  word-break: break-all;
+  color: var(--text-color);
   line-height: 2.2rem;
   font-size: 1.8rem;
   font-weight: 700;
+  overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-all;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  color: var(--text-color);
 }
 
 .ticket-hall {
   width: 100%;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   display: block;
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: #666;
   /* 1줄 ... 처리 */
-  margin: 0.7rem 0;
+  /* margin: 0.4rem 0; */
 }
 .ticket-date {
-  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.4rem;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
   color: #999;
 }
 .ticket-sale {
@@ -1002,11 +999,11 @@ body {
 .books {
 }
 .books .section-slide {
-  /* height: 400px; */
+  height: 40rem;
 }
 
 .books .section-slide .sw-bt {
-  top: 41%;
+  top: 43%;
 }
 
 .sw-books {
@@ -1100,7 +1097,7 @@ body {
     top: 44%;
   }
   .books-img {
-    height: 457px;
+    height: 45rem;
   }
 }
 

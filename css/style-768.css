@@ -50,34 +50,33 @@
 
 /* 티켓랭킹 */
 .ticket-info {
-  padding: 10px 5px;
+  padding: 1rem 0.5rem;
 }
 .ticket-title {
-  font-size: 15px;
-  line-height: 18px;
-  height: 36px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   font-weight: 400;
 }
 .ticket-title b {
 }
 .ticket-hall {
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1rem;
-  margin: 5px 0;
+  margin: 0.5rem 0;
 }
 .ticket-date {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 .ticket-sale {
-  font-size: 10px;
-  line-height: 18px;
-  padding: 0 5px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  padding: 0 0.5rem;
 }
 
 /* 인터파크 라이브 */
 .live .section-slide {
-  height: 230px;
+  height: 23rem;
 }
 
 .live-info-title {
@@ -94,7 +93,7 @@
   line-height: 28px;
 }
 .live-info-bottom {
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 .live-info-desc {
   float: right;
@@ -106,6 +105,7 @@
 }
 
 /* 오늘의 도서 */
+
 .books-img {
   height: 41.66vw;
 }
