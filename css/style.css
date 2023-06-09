@@ -42,12 +42,13 @@ body {
 .inner {
   display: block;
   position: relative;
-  max-width: 1280px;
+  max-width: 128rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 1280px) {
-  .inner {
-    max-width: 1200px;
+  section {
+    max-width: 102.4rem;
+    margin: 0 auto;
   }
 }
 
@@ -538,7 +539,7 @@ body {
   height: 100%;
 }
 .shopping-item {
-  /* width: 15rem; */
+  /* min-width: 15rem; */
   height: fit-content;
 }
 .good {
@@ -551,24 +552,32 @@ body {
   text-align: center;
   overflow: hidden;
 }
-.good > img {
-  width: 100%;
-  /* 배경색이 mix blend 되므로 색상이 섞인다. */
-  /* multiply 는 흰색을 투명하게 한다. */
-  /* 자주 사용하지는 않습니다. */
-  /* 포토샵 처럼 이미지 블랜드가 가능하다. */
+.good-img {
+  /* 배경색이 mix blend 되므로 색상이 섞인다.
+   * multiply 는 흰색을 투명하게 한다.
+   * 자주 사용하지는 않습니다.
+   * 포토샵 처럼 이미지 블랜드가 가능하다. 
+   */
   mix-blend-mode: multiply;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.good-img img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .good-info {
   background: var(--white);
   height: 10.6rem;
   padding: 2rem;
   text-align: left;
-}
-
-.good-info-list {
-}
-.good-info-list li {
 }
 .good-info-list li b {
   font-size: 2rem;
@@ -579,6 +588,7 @@ body {
 }
 .good-info-list li b span {
   color: var(--red-color);
+  margin-right: 0.4rem;
 }
 .good-info-list li p {
   /* 3. display: -webkit-box */
@@ -586,7 +596,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: var(--text-color);
-  margin-top: 1rem;
+  margin-top: 0.6rem;
 
   /* 내용이 1줄일 수도 있고 최대 2줄이다 */
   /* 높이값을 지정해서 레이아웃을 지킨다. */

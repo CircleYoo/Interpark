@@ -127,8 +127,10 @@ window.onload = function () {
       let ratio = obj.ratio !== null ? `<span>${obj.ratio}%</span>` : '';
       let temp = `
         <div class="swiper-slide shopping-item">
-          <a href="${obj.link}" class="good">
-            <img src="images/${obj.pic}" alt="${obj.product}" />
+        <a href="${obj.link}" class="good">
+            <div class="good-img">
+              <img src="images/${obj.pic}" alt="${obj.product}" />
+            </div>
             <div class="good-info">
               <ul class="good-info-list">
                 <li>

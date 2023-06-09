@@ -3,7 +3,7 @@
   padding: 0 2rem;
   padding-bottom: 4rem;
 
-  max-width: 760px;
+  max-width: 76rem;
   border-bottom: 1px solid #f0f4f4;
 }
 
@@ -14,38 +14,38 @@
 
 /* section 내용 구조 */
 .wrap > section {
-  padding-top: 30px;
+  padding-top: 3rem;
   padding-bottom: 0px;
 }
 
 .section-top > h2 {
   font-size: 2rem;
-  line-height: 24px;
+  line-height: 2.4rem;
   margin-bottom: 0;
 }
 
 .section-top > p {
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .bt-link-shop {
   display: block;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 4.8rem;
-  border-radius: 3px;
+  border-radius: 0.3rem;
 }
 
 .section-top .btns {
-  margin: 15px 0;
+  margin: 1.5rem 0;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .section-top .btns a {
-  line-height: 34px;
-  padding: 0 14px;
-  margin-right: 5px;
+  line-height: 3.4rem;
+  padding: 0 1.4rem;
+  margin-right: 0.5rem;
 }
 /* 플라잉배너 */
 .fix-banner {
@@ -68,7 +68,7 @@
 .header .inner {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+  padding-top: 1.5rem;
   height: 23rem;
 }
 
@@ -129,7 +129,7 @@
 
 .service-list {
   display: inherit;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .service-list li {
@@ -137,7 +137,7 @@
 }
 
 .service-list li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .service-list li a {
@@ -176,8 +176,8 @@
 
 /* swiper.js 에서 자동으로 css 생성 */
 .sw-promotion-pg .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   opacity: 0.2;
   background-color: #000;
@@ -190,37 +190,47 @@
 
 /* 쇼핑추천 */
 .good-info {
-  padding: 10px;
+  height: auto;
+  padding: 1.2rem;
 }
-
+.good-info-list li b {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+}
+.good-info-list li p {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  margin-top: 0.3rem;
+}
 /* 투어특가 */
 .tour-img {
   /* height: 138px; */
 }
 
 .tour-info {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .tour-cate {
   top: -22px;
-  line-height: 22px;
-  padding: 0 7px;
-  border-radius: 4px;
+  line-height: 2.2rem;
+  padding: 0 0.7rem;
+  border-radius: 0.4rem;
 }
 
 .tour-title {
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .tour-price {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .tour-price b {
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 /* 티켓랭킹 */
@@ -279,27 +289,27 @@
 }
 
 .live-info-cate {
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 2rem;
-  border-radius: 10px;
-  padding: 0 7px;
+  border-radius: 1rem;
+  padding: 0 0.7rem;
 }
 
 .live-info-title {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.6rem;
-  height: 34px;
+  height: 3.4rem;
 }
 
 .live-info-date {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   white-space: nowrap;
 }
 
 .live-info-time {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
 }
 
 .live-info-desc {
@@ -313,27 +323,27 @@
 }
 
 .live-info-thumb {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .live-info-desc-title {
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
 }
 
 .live-info-desc-price {
-  font-size: 13px;
+  font-size: 1.3rem;
   white-space: nowrap;
-  margin-top: -5px;
+  margin-top: -0.5rem;
 }
 
 .live-info-desc-price em {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .live-info-desc-price b {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 /* 오늘의 도서 */
