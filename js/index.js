@@ -477,7 +477,7 @@ function makeTicketSlide(data) {
       },
       breakpoints: {
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 3, //브라우저가 1024보다 클 때
           spaceBetween: 32,
         },
         1280: {
@@ -550,7 +550,7 @@ function makeTicketSlide(data) {
         rows: 4,
         fill: "row",
       },
-      spaceBetween: 19,
+      spaceBetween: 14,
       navigation: {
         nextEl: ".books .sw-next",
         prevEl: ".books .sw-prev",
