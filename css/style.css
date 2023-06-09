@@ -636,9 +636,6 @@ body {
 }
 
 /* 투어특가 */
-.tour {
-}
-
 .tour .section-slide {
   /* height: 355px; */
 }
@@ -661,7 +658,7 @@ body {
   /* 1280px 이 100vw 라면  */
   /* 245px 은 몇 vw 일까? */
   /*  245 / 1280 * 100  */
-  max-height: 245px;
+  max-height: 24.5rem;
   height: 19.14vw;
 
   overflow: hidden;
@@ -678,20 +675,20 @@ body {
 }
 
 .tour-info {
-  padding: 2rem;
+  padding: 2.3rem 2rem 1.8rem;
   background: var(--white);
 }
 .tour-info-list {
 }
 .tour-info-list li {
   position: relative;
-  margin: 0.4rem 0;
+  margin: 0.6rem 0;
 }
 
 .tour-cate {
   display: inline-block;
   position: absolute;
-  top: -39px;
+  top: -40px;
   left: 0;
   background: var(--accenct-color);
   font-size: 1.4rem;

@@ -205,15 +205,18 @@
 }
 /* 투어특가 */
 .tour-img {
-  /* height: 138px; */
+  height: 13.8rem;
 }
 
 .tour-info {
-  padding: 1rem;
+  padding: 1.6rem 1.2rem 1.2rem;
 }
-
+.tour-info-list li {
+  margin: 0.4rem 0;
+}
 .tour-cate {
-  top: -22px;
+  top: -34px;
+  font-size: 1rem;
   line-height: 2.2rem;
   padding: 0 0.7rem;
   border-radius: 0.4rem;
@@ -223,7 +226,17 @@
   font-size: 1.3rem;
   line-height: 1.5rem;
 }
-
+.tour-place {
+  display: -webkit-box;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  margin: 0.2rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 .tour-price {
   font-size: 1.5rem;
 }

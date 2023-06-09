@@ -285,7 +285,7 @@ window.onload = function () {
     swTourWrapper.innerHTML = swTourHtml;
 
     let tourSwiper = new Swiper(".sw-tour", {
-      slidesPerView: 3,
+      slidesPerView: 2,
       grid: {
         rows: 2,
         fill: "row",
