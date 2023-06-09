@@ -199,8 +199,7 @@ window.onload = function () {
             rows: 1,
           },
         },
-      },
-      // freeMode : true
+      }
     });
   }
 
