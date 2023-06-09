@@ -198,40 +198,51 @@ window.onload = function () {
 
   // tour button
   let tourBtn = document.querySelectorAll('.tour .btns a');
-  console.log(tourBtn)
-  tourBtn.forEach((item) => {
+  let tourCategories = ['soldOut', 'package', 'domestic', 'overseas'];
+
+  tourBtn.forEach((item, index) => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
+
       // ↓ 모든 버튼에서 class 제거
       tourBtn.forEach(btn => btn.classList.remove('btns-active'))
       this.classList.add('btns-active')
+
+      let category = tourCategories[index];
+      newData = tourData[category];
+
+      makeTourSlide(newData);
     })
   })
 
   // tour Swiper
-  let tourData = null;
-  // const tourXhttp = new XMLHttpRequest();
-  // tourXhttp.onreadystatechange = function (event) {
-  //   const req = event.target;
-  //   if (req.readyState === XMLHttpRequest.DONE) {
-  //     tourData = JSON.parse(req.response);
-  //     makeTourSlide();
-  //   }
-  // };
-  // tourXhttp.open("GET", "tourdata.json");
-  // tourXhttp.send();
+  let tourData;
+  /* const tourXhttp = new XMLHttpRequest();
+   * tourXhttp.onreadystatechange = function (event) {
+   *   const req = event.target;
+   *   if (req.readyState === XMLHttpRequest.DONE) {
+   *     tourData = JSON.parse(req.response);
+   *     makeTourSlide();
+   *   }
+   * };
+   * tourXhttp.open("GET", "tourdata.json");
+   * tourXhttp.send();
+   */ 
   fetch('./tourdata.json')
     .then(response => response.json())
     .then(result => {
       tourData = result;
-      makeTourSlide(result);
+      makeTourSlide(tourData.soldOut);
     })
     .catch(error => console.log('toudata 가져오기 실패', error))
 
-  function makeTourSlide() {
+  function makeTourSlide(data) {
     let swTourHtml = ``;
-    for (let i = 0; i < tourData.length; i++) {
-      let obj = tourData[i];
+    for (let i = 0; i < data.length; i++) {
+      let obj = data[i];
+      let category = obj.category !== null ? `<span class="tour-cate">${obj.category}</span>` : '';
+      let title = obj.title !== null ? `<span class="tour-title">${obj.title}</span>` : '';
+      
       let temp = `
       <div class="swiper-slide">
         <a href="${obj.link}" class="tour-link">
@@ -243,10 +254,10 @@ window.onload = function () {
               <li ${
                 obj.category ? "style='display:block'" : "style='display:none'"
               }>
-                <span class="tour-cate">${obj.category}</span>
+                ${category}
               </li>
               <li>
-                <span class="tour-title">${obj.title}</span>
+                ${title}
               </li>
               <li>
                 <span class="tour-place">${obj.place}</span>
