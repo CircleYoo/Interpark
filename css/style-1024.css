@@ -48,6 +48,9 @@
   margin-right: 5px;
 }
 /* 플라잉배너 */
+.fix-banner {
+  bottom: 6.5rem;
+}
 .fix-banner a img {
   display: none;
 }
@@ -307,21 +310,36 @@
 
 /* 오늘의 도서 */
 .books-img {
-  height: 322px;
+  height: 32rem;
+}
+
+.books-img i {
+  min-width: 1.54rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
 
 .books-info-title {
-  font-size: 13px;
-  line-height: 15px;
-  margin: 4px 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  white-space: inherit;
 }
-
+.books-info-desc {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
 .books-info-price {
-  font-size: 14px;
+  margin-top: 0.6rem;
+  font-size: 1.4rem;
 }
 
 .books-info-price em {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* 이벤트 */
