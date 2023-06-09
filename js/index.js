@@ -490,35 +490,49 @@ function makeTicketSlide(data) {
 
   // 오늘의 도서 button
   let bookBtn = document.querySelectorAll('.books .btns a');
-  bookBtn.forEach((item) => {
+  let bookCategories = ['MD_book', 'best_seller', 'recommend', 'sale'];
+  bookBtn.forEach((item, index) => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
 
-      bookBtn.forEach(btn => btn.classList.remove('btns-active'))
-      this.classList.add('btns-active')
+      bookBtn.forEach(btn => btn.classList.remove('btns-active'));
+      this.classList.add('btns-active');
+
+      let category = bookCategories[index];
+      newData = bookData[category]
+      bookSilde(newData)
     })
   })
   // 오늘의 도서 json 연동
-  let bookdata = null;
-  fetch('./bookdata.json')
+  let bookData = null;
+  fetch('./bookData.json')
     .then(response => response.json())
     .then(result => {
-      bookdata = result;
-      bookSilde();
+      bookData = result;
+      bookSilde(bookData.MD_book);
     })
-  function bookSilde() {
+  function bookSilde(data) {
     let html = ``;
-    for (let i = 0; i < bookdata.book_total; i++) {
-      let obj = bookdata[`book_${i + 1}`];
+    for (let i = 0; i < data.length; i++) {
+      let obj = data[i];
+      let rank = obj.rank !== null ? `<i class="books-num">${obj.rank}</i>` : '';
+      let desc = obj.desc !== null ? `<p class="books-info-desc">${obj.desc}</p>` : '';
+      let sale = obj.sale !== null ? `<span>${obj.sale}%</span>` : '';
+      let price = obj.price !== null ? `<em>${obj.price}</em>원` : '';
       let temp = `
         <div class="swiper-slide">
           <a href="${obj.link}" class="books-link">
             <div class="books-img">
               <img src="images/${obj.pic}" alt="${obj.alt}" />
+              ${rank}
             </div>
             <div class="books-info">
               <p class="books-info-title">${obj.title}</p>
-              <p class="books-info-price"><em>${obj.price}</em>원</p>
+              ${desc}
+              <p class="books-info-price">
+                ${sale}
+                ${price}
+              </p>
             </div>
           </a>
         </div>

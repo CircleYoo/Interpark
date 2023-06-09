@@ -1,73 +1,410 @@
 {
-  "book_total": 10,
-  "book_1": {
-    "link": "#",
-    "pic": "MD_book1.jpg",
-    "alt": "book",
-    "title": "New 대한민국 청약지도",
-    "price": "18,000"
-  },
-  "book_2": {
-    "link": "#",
-    "pic": "MD_book2.jpg",
-    "alt": "book",
-    "title": "스트레이키즈 앨범 정규 3집 파이브 스타 5 STAR 일반반 [3종세트]",
-    "price": "11,700"
-  },
-  "book_3": {
-    "link": "#",
-    "pic": "MD_book3.jpg",
-    "alt": "book",
-    "title": "보그 Vogue Korea D형 2023 6월호 (표지 : BTS RM)",
-    "price": "10,800"
-  },
-  "book_4": {
-    "link": "#",
-    "pic": "MD_book4.jpg",
-    "alt": "book",
-    "title": "눈물을 마시는 새 출판 20주년 일러스트 특별 한정판 세트",
-    "price": "90,000"
-  },
-  "book_5": {
-    "link": "#",
-    "pic": "MD_book5.jpg",
-    "alt": "book",
-    "title": "뭔말 역사 용어 150",
-    "price": "18,900"
-  },
-  "book_6": {
-    "link": "#",
-    "pic": "MD_book6.jpg",
-    "alt": "book",
-    "title": "나는 매일 더 가벼워지고 있습니다",
-    "price": "16,200"
-  },
-  "book_7": {
-    "link": "#",
-    "pic": "MD_book7.jpg",
-    "alt": "book",
-    "title": "원피스 105: 루피의 꿈",
-    "price": "4,950"
-  },
-  "book_8": {
-    "link": "#",
-    "pic": "MD_book8.jpg",
-    "alt": "book",
-    "title": "풍수전쟁",
-    "price": "15,120"
-  },
-  "book_9": {
-    "link": "#",
-    "pic": "MD_book9.jpg",
-    "alt": "book",
-    "title": "유현준의 인문 건축 기행",
-    "price": "17,550"
-  },
-  "book_10": {
-    "link": "#",
-    "pic": "MD_book10.jpg",
-    "alt": "book",
-    "title": "흔한남매 별난 세계 여행 1: 세계 유명 박물관",
-    "price": "12,600"
-  }
+  "MD_book" : [
+    {
+      "link": "#",
+      "pic": "MD_book1.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "New 대한민국 청약지도",
+      "desc": null,
+      "sale": null,
+      "price": "18,000"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book2.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "스트레이키즈 앨범 정규 3집 파이브 스타 5 STAR 일반반 [3종세트]",
+      "desc": null,
+      "sale": null,
+      "price": "11,700"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book3.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "보그 Vogue Korea D형 2023 6월호 (표지 : BTS RM)",
+      "desc": null,
+      "sale": null,
+      "price": "10,800"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book4.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "눈물을 마시는 새 출판 20주년 일러스트 특별 한정판 세트",
+      "desc": null,
+      "sale": null,
+      "price": "90,000"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book5.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "뭔말 역사 용어 150",
+      "desc": null,
+      "sale": null,
+      "price": "18,900"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book6.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "나는 매일 더 가벼워지고 있습니다",
+      "desc": null,
+      "sale": null,
+      "price": "16,200"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book7.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "원피스 105: 루피의 꿈",
+      "desc": null,
+      "sale": null,
+      "price": "4,950"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book8.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "풍수전쟁",
+      "desc": null,
+      "sale": null,
+      "price": "15,120"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book9.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "유현준의 인문 건축 기행",
+      "desc": null,
+      "sale": null,
+      "price": "17,550"
+    },
+    {
+      "link": "#",
+      "pic": "MD_book10.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "흔한남매 별난 세계 여행 1: 세계 유명 박물관",
+      "desc": null,
+      "sale": null,
+      "price": "12,600"
+    }
+  ],
+  "best_seller" : [
+    {
+      "link": "#",
+      "pic": "bestseller1.jpg",
+      "alt": "book",
+      "rank": 1,
+      "title": "세이노의 가르침",
+      "desc": "세이노",
+      "sale": null,
+      "price": "6,480"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller2.jpg",
+      "alt": "book",
+      "rank": 2,
+      "title": "유연함의 힘",
+      "desc": "수잔 애쉬포드",
+      "sale": null,
+      "price": "19,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller3.jpg",
+      "alt": "book",
+      "rank": 3,
+      "title": "모든 삶은 흐른다",
+      "desc": "로랑스 드빌레르/이주영 역",
+      "sale": null,
+      "price": "15,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller4.jpg",
+      "alt": "book",
+      "rank": 4,
+      "title": "하늘과 바람과 별과 인간",
+      "desc": "김상욱",
+      "sale": null,
+      "price": "16,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller5.jpg",
+      "alt": "book",
+      "rank": 5,
+      "title": "딸아, 돈 공부 절대 미루지 마라",
+      "desc": "박소연",
+      "sale": null,
+      "price": "16,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller6.jpg",
+      "alt": "book",
+      "rank": 6,
+      "title": "이꼬이에 놀러 오세요",
+      "desc": null,
+      "sale": null,
+      "price": "18,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller7.jpg",
+      "alt": "book",
+      "rank": 7,
+      "title": "건강과 다이어트를 동시에 잡는 7대 3의 법칙 채소·과일식",
+      "desc": "조승우",
+      "sale": null,
+      "price": "18,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller8.jpg",
+      "alt": "book",
+      "rank": 8,
+      "title": "메리골드 마음 세탁소",
+      "desc": "윤정은",
+      "sale": null,
+      "price": "17,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller9.jpg",
+      "alt": "book",
+      "rank": 9,
+      "title": "이은경쌤의 초등어휘일력 365",
+      "desc": "이은경, 이은경",
+      "sale": null,
+      "price": "13,000"
+    },
+    {
+      "link": "#",
+      "pic": "bestseller10.jpg",
+      "alt": "book",
+      "rank": 10,
+      "title": "스토너",
+      "desc": "존 윌리엄스/김승욱 역",
+      "sale": null,
+      "price": "16,000"
+    }
+  ],
+  "recommend" : [
+    {
+      "link": "#",
+      "pic": "recommend1.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "0~5세 골든 브레인 육아법",
+      "desc": "다정한 뇌과학 수업, 영유아 두뇌 발달 컨설팅 ",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend2.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "화가가 사랑한 바다",
+      "desc": "정우철 도슨튼이 들려주는 명화에 담긴 바다!",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend3.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "풍수전쟁",
+      "desc": "밀리언셀러 작가 김진명의 신작. 대한민국의 과거와 미래를 향해 내려진 주문의 정체를 통해 조작된 우리의 역사를 직면한다! ",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend4.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "얼굴 없는 중개자들",
+      "desc": "공급망 위기, 물가 상승, 패권 전쟁의 진짜 원인 ‘원자재’ 중개 업체의 탄생과 현재, 그들의 비밀을 폭로한다!",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend5.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "범도 1: 포수의 원칙",
+      "desc": "집필부터 탈고까지 10년 방현석의 역작. 조선 최고의 스나이퍼, 홍범도와 포수들의 격렬한 항일 무장투쟁의 대서사시.",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend6.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "AI 빅뱅",
+      "desc": "AI 발전 전망을 둘러싼 대논쟁의 시대, AI 빅뱅을 인문학 르네상스로 역전시키는 철학자 김재인의 날카로운 통찰.",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend7.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "알아차림에 대한 알아차림",
+      "desc": "세계적 명상가 루퍼트 스파이라의 “자아 탐구”. 『내면소통』 김주환 교수의 번역으로 만나는 알아차림 명상을 만난다.",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend8.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "토니 로빈스 거인의 생각법",
+      "desc": "세계적 동기부여가 토니 로빈스의 모든 생각이 집약된 한 권의 책! 하루 한 페이지씩 짧게 읽고 실천할 수 있도록 한다.",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend9.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "꼬리에 꼬리를 무는 한국경제사",
+      "desc": "경제 뉴스를 따라잡기 위해 알아야 할 한국경제 46대 사건을 28만 구독 금융·경제 레터 ‘어피티’ 정인이 쉽고 유쾌하게 들려준다.",
+      "sale": null,
+      "price": null
+    },
+    {
+      "link": "#",
+      "pic": "recommend10.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "와일드후드",
+      "desc": "사춘기에 시작되며 ‘어른’ 생명체로 살아가는 데 반드시 필요한 시간 와일드후드의 시기,‘인생의 결정적 단계에 관한 경이로운 고찰",
+      "sale": null,
+      "price": null
+    }
+  ],
+  "sale" : [
+    {
+      "link": "#",
+      "pic": "sale1.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "개비의 매직하우스 워크북 알파벳",
+      "desc": null,
+      "sale": 25,
+      "price": "7,140"
+    },
+    {
+      "link": "#",
+      "pic": "sale2.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "엉뚱발랄 콩순이 머리가 똑똑해지는 88 판퍼즐",
+      "desc": null,
+      "sale": 50,
+      "price": "3,900"
+    },
+    {
+      "link": "#",
+      "pic": "sale3.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "알록달록 반짝반짝 버튼사운드북",
+      "desc": null,
+      "sale": 30,
+      "price": "21,000"
+    },
+    {
+      "link": "#",
+      "pic": "sale4.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "바나나 봉봉 사운드북",
+      "desc": null,
+      "sale": 30,
+      "price": "11,200"
+    },
+    {
+      "link": "#",
+      "pic": "sale5.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "시크릿 쥬쥬 베스트 프렌즈: 머리가 똑똑해지는 88 판퍼즐",
+      "desc": null,
+      "sale": 50,
+      "price": "3,900"
+    },
+    {
+      "link": "#",
+      "pic": "sale6.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "잘 자, 꼬마 곰!",
+      "desc": null,
+      "sale": 35,
+      "price": "15,600"
+    },
+    {
+      "link": "#",
+      "pic": "sale7.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "오려도 오려도 끝판왕 진짜! 마트 오리기",
+      "desc": null,
+      "sale": 20,
+      "price": "12,400"
+    },
+    {
+      "link": "#",
+      "pic": "sale8.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "민트 봉봉",
+      "desc": null,
+      "sale": 30,
+      "price": "11,200"
+    },
+    {
+      "link": "#",
+      "pic": "sale9.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "개비의 매직하우스 워크북 숫자",
+      "desc": null,
+      "sale": 25,
+      "price": "7,310"
+    },
+    {
+      "link": "#",
+      "pic": "sale10.jpg",
+      "alt": "book",
+      "rank": null,
+      "title": "와당탕 속담이 백 개라도 꿰려면 보드게임",
+      "desc": null,
+      "sale": 30,
+      "price": "15,400"
+    }
+  ]
 }
