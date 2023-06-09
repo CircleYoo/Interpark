@@ -97,11 +97,17 @@ window.onload = function () {
 
   // Shopping button
   let shoppingBtn = document.querySelectorAll('.shopping .btns a');
-  shoppingBtn.forEach((item) => {
+  let shopCategories = ['deal', 'best', 'monsoon', 'lowest', 'sodam'];
+  shoppingBtn.forEach((item, index) => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
       shoppingBtn.forEach(btn => btn.classList.remove('btns-active'))
-      this.classList.add('btns-active')
+      this.classList.add('btns-active');
+
+      let category = shopCategories[index];
+      newData = shoppingData[category];
+
+      makeShoppingSlide(newData);
     })
   })
   // <!-- Shopping Swiper -->
@@ -110,15 +116,15 @@ window.onload = function () {
     .then(response => response.json())
     .then(result => {
       shoppingData = result;
-      makeShoppingSlide(result);
+      makeShoppingSlide(shoppingData.deal);
     })
     .catch(error => console.log(error));
   
-  function makeShoppingSlide() {
+  function makeShoppingSlide(data) {
     let swShoppingHtml = ``;
-
-    for (let i = 0; i < shoppingData.length; i++) {
-      let obj = shoppingData[i];
+    for (let i = 0; i < data.length; i++) {
+      let obj = data[i];
+      let ratio = obj.ratio !== null ? `<span>${obj.ratio}%</span>` : '';
       let temp = `
         <div class="swiper-slide shopping-item">
           <a href="${obj.link}" class="good">
@@ -126,7 +132,7 @@ window.onload = function () {
             <div class="good-info">
               <ul class="good-info-list">
                 <li>
-                  <b><span>${obj.ratio}%</span> ${obj.price}원</b>
+                  <b>${ratio}${obj.price}원</b>
                 </li>
                 <li><p>${obj.product}</p></li>
               </ul>

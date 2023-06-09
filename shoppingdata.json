@@ -1,79 +1,383 @@
-[
-  {
-    "link": "#",
-    "pic": "good1.jpg",
-    "product": "삼성전자 올인원 일체형PC DM530ADA-L78A 인텔 i7 삼성컴퓨터",
-    "ratio": 21,
-    "price": "999,000"
-  },
-  {
-    "link": "#",
-    "pic": "good2.jpg",
-    "product": "★아이팝★ [무료배송] 팔도 미니 왕뚜껑 오리지날 80g 16개",
-    "ratio": 3,
-    "price": "12,500"
-  },
-  {
-    "link": "#",
-    "pic": "good3.jpg",
-    "product": "QCY T13 ANC 노이즈캔슬링 무선 블루투스 이어폰",
-    "ratio": 9,
-    "price": "19,430"
-  },
-  {
-    "link": "#",
-    "pic": "good4.jpg",
-    "product": "*APP쿠폰 16,120원* [베베당] 아기간식 쌀과자 구름사또 골고루 9봉 세트",
-    "ratio": 10,
-    "price": "10,710"
-  },
-  {
-    "link": "#",
-    "pic": "good5.jpg",
-    "product": "경남 하우스 수박 3~7키로",
-    "ratio": 36,
-    "price": "7,950"
-  },
-  {
-    "link": "#",
-    "pic": "good6.jpg",
-    "product": "★6/2~4★ 5% 다운로드 쿠폰 혜택! 게이밍 1인용 컴퓨터 책상 GD001 1200",
-    "ratio": 20,
-    "price": "78,850"
-  },
-  {
-    "link": "#",
-    "pic": "good7.jpg",
-    "product": "[한정수량] 25W 초고속 충전기 어댑터 + 고속충전 케이블 증정",
-    "ratio": 2,
-    "price": "7,410"
-  },
-  {
-    "link": "#",
-    "pic": "good8.jpg",
-    "product": "*APP쿠폰 9,710원* [베베당] 유기농 롱스틱 골고루 20봉 세트(+미니스틱 2봉증정)",
-    "ratio": 10,
-    "price": "28,710"
-  },
-  {
-    "link": "#",
-    "pic": "good9.jpg",
-    "product": "시원한 쿨 스포츠타올 쿨방석 아이스롤러 넥선풍기 외 여름 상품 모음",
-    "ratio": 20,
-    "price": "4,000"
-  },
-  {
-    "link": "#",
-    "pic": "good10.jpg",
-    "product": "카카오프렌즈 춘식이 캔소맥잔 워터보틀 드링크자 외 25종 모음",
-    "ratio": 40,
-    "price": "2,900"
-  },
-  {
-    "link": "#",
-    "pic": "good11.jpg",
-    "product": "농심 백산수 무라벨 2L 18병 생수",
-    "ratio": 15,
-    "price": "15,700"
-  }
-]
+{
+  "deal": [
+    {
+      "link": "#",
+      "pic": "good1.jpg",
+      "product": "삼성전자 올인원 일체형PC DM530ADA-L78A 인텔 i7 삼성컴퓨터",
+      "ratio": 21,
+      "price": "999,000"
+    },
+    {
+      "link": "#",
+      "pic": "good2.jpg",
+      "product": "★아이팝★ [무료배송] 팔도 미니 왕뚜껑 오리지날 80g 16개",
+      "ratio": 3,
+      "price": "12,500"
+    },
+    {
+      "link": "#",
+      "pic": "good3.jpg",
+      "product": "QCY T13 ANC 노이즈캔슬링 무선 블루투스 이어폰",
+      "ratio": 9,
+      "price": "19,430"
+    },
+    {
+      "link": "#",
+      "pic": "good4.jpg",
+      "product": "*APP쿠폰 16,120원* [베베당] 아기간식 쌀과자 구름사또 골고루 9봉 세트",
+      "ratio": 10,
+      "price": "10,710"
+    },
+    {
+      "link": "#",
+      "pic": "good5.jpg",
+      "product": "경남 하우스 수박 3~7키로",
+      "ratio": 36,
+      "price": "7,950"
+    },
+    {
+      "link": "#",
+      "pic": "good6.jpg",
+      "product": "★6/2~4★ 5% 다운로드 쿠폰 혜택! 게이밍 1인용 컴퓨터 책상 GD001 1200",
+      "ratio": 20,
+      "price": "78,850"
+    },
+    {
+      "link": "#",
+      "pic": "good7.jpg",
+      "product": "[한정수량] 25W 초고속 충전기 어댑터 + 고속충전 케이블 증정",
+      "ratio": 2,
+      "price": "7,410"
+    },
+    {
+      "link": "#",
+      "pic": "good8.jpg",
+      "product": "*APP쿠폰 9,710원* [베베당] 유기농 롱스틱 골고루 20봉 세트(+미니스틱 2봉증정)",
+      "ratio": 10,
+      "price": "28,710"
+    },
+    {
+      "link": "#",
+      "pic": "good9.jpg",
+      "product": "시원한 쿨 스포츠타올 쿨방석 아이스롤러 넥선풍기 외 여름 상품 모음",
+      "ratio": 20,
+      "price": "4,000"
+    },
+    {
+      "link": "#",
+      "pic": "good10.jpg",
+      "product": "카카오프렌즈 춘식이 캔소맥잔 워터보틀 드링크자 외 25종 모음",
+      "ratio": 40,
+      "price": "2,900"
+    },
+    {
+      "link": "#",
+      "pic": "good11.jpg",
+      "product": "농심 백산수 무라벨 2L 18병 생수",
+      "ratio": 15,
+      "price": "15,700"
+    }
+  ],
+  "best": [
+    {
+      "link": "#",
+      "pic": "best1.jpg",
+      "product": "[수산쿠폰20%]  국내산 동해 손질 통 오징어 급냉 (2미x5팩)10마리",
+      "ratio": 10,
+      "price": "21,150"
+    },
+    {
+      "link": "#",
+      "pic": "best2.jpg",
+      "product": "*APP쿠폰 38,020원* [팸퍼스데이] 팸퍼스 2023 통잠팬티 4팩 기저귀",
+      "ratio": null,
+      "price": "54,000"
+    },
+    {
+      "link": "#",
+      "pic": "best3.jpg",
+      "product": "[장터할매]2023년 햇 자색양파 특대(요리용) 3kg 5kg 10kg",
+      "ratio": null,
+      "price": "6,900"
+    },
+    {
+      "link": "#",
+      "pic": "best4.jpg",
+      "product": "*APP쿠폰 49,060원* [팸퍼스데이] 팸퍼스 2023 베이비드라이 팬티 밴드 1박스 기저귀",
+      "ratio": null,
+      "price": "66,710"
+    },
+    {
+      "link": "#",
+      "pic": "best5.jpg",
+      "product": "튤립사운드북 재정가 코랄이외 분홍이/하늘이",
+      "ratio": 3,
+      "price": "44,950"
+    },
+    {
+      "link": "#",
+      "pic": "best6.jpg",
+      "product": "#비밀특가 티젠 콤부차 30스틱입 모음(9종 택1/레몬,피치,파인애플,베리,유자,샤인머스캣,망고구아바,자몽)",
+      "ratio": null,
+      "price": "12,850"
+    },
+    {
+      "link": "#",
+      "pic": "best7.jpg",
+      "product": "크리넥스 라이트핏 쿨마스크 소형/중형/대형/특대형 10PX5개",
+      "ratio": 6,
+      "price": "17,410"
+    },
+    {
+      "link": "#",
+      "pic": "best8.jpg",
+      "product": "루솔 진한 배도라지즙 60포&80포 선물박스",
+      "ratio": 6,
+      "price": "57,710"
+    },
+    {
+      "link": "#",
+      "pic": "best9.jpg",
+      "product": "*APP쿠폰 14,380원* 릿첼 AQ 첫걸음 머그 스텝업 세트 (빨대컵+머그+드링)",
+      "ratio": null,
+      "price": "20,500"
+    }
+  ],
+  "monsoon": [
+    {
+      "link": "#",
+      "pic": "monsoon1.jpg",
+      "product": "[장마대비 추천!] 재팬월드/워터프론트/접이식우산/3단우산/일본우산",
+      "ratio": 8,
+      "price": "8,150"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon2.jpg",
+      "product": "[OOFOS] 우포스 오리지널 남녀공용 1000/1100 플립플랍 3종 택1",
+      "ratio": 13,
+      "price": "54,000"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon3.jpg",
+      "product": "쿠로미 롤링 워터슈즈",
+      "ratio": 15,
+      "price": "12,900"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon4.jpg",
+      "product": "라코스테 반팔티셔츠 브이넥 블랙 TH2036-031",
+      "ratio": 20,
+      "price": "52,600"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon5.jpg",
+      "product": "PEVA 자전거방수커버 자전거커버 자전거 오토바이 바이크 덮개 방수 카바 장마철 완전방수 26형 자전거용품",
+      "ratio": 14,
+      "price": "3,800"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon6.jpg",
+      "product": "불스원 레인OK 유리 발수코팅 스피드 380ml",
+      "ratio": 45,
+      "price": "6,850"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon7.jpg",
+      "product": "인어공주 라이팅 레인부츠_특가",
+      "ratio": 12,
+      "price": "17,410"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon8.jpg",
+      "product": "나이키 조던 점프맨 EMB 반팔티 DC7486-010/100",
+      "ratio": 20,
+      "price": "30,180"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon9.jpg",
+      "product": "[멜리사] 23SS 신상 여름 젤리슈즈 15종 모음",
+      "ratio": 14,
+      "price": "31,370"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon10.jpg",
+      "product": "[단독]  [인터파크고객전용] 트레이너 실내 로라 8단 스마트",
+      "ratio": 17,
+      "price": "85,500"
+    },
+    {
+      "link": "#",
+      "pic": "monsoon11.jpg",
+      "product": "[추가할인쿠폰] 이고진 좌식 실내자전거 706R 온가족 헬스자전거",
+      "ratio": 20,
+      "price": "230,500"
+    }
+  ],
+  "lowest": [
+    {
+      "link": "#",
+      "pic": "lowest1.jpg",
+      "product": "★단독 국내배송/2023년형★[Iprime] 드리미 V11 무선청소기 최신형 풀패키지 한글판/국내 무상AS/삼성 대용량 배터리/한글설명서 포함/청소키트",
+      "ratio": null,
+      "price": "219,150"
+    },
+    {
+      "link": "#",
+      "pic": "lowest2.jpg",
+      "product": "★TPU창/에어펌프/수리키트 증정★ [예약판매 7월초출고/몬트리프] M7 리빙쉘 에어텐트 카키/아이보리 2종 택1",
+      "ratio": 4,
+      "price": "854,000"
+    },
+    {
+      "link": "#",
+      "pic": "lowest3.jpg",
+      "product": "★아이팝★ [한정수량] 삼성전자 JBL FLIP5 휴대용 방수 블루투스 스피커 블랙/블루/레드",
+      "ratio": 3,
+      "price": "86,900"
+    },
+    {
+      "link": "#",
+      "pic": "lowest4.jpg",
+      "product": "*베베토 젤리/이메이 구미초코볼 /폴라레티 선택구매",
+      "ratio": 6,
+      "price": "12,710"
+    },
+    {
+      "link": "#",
+      "pic": "lowest5.jpg",
+      "product": "★아이팝★ 유유네이처 멀티비타민&멀티미네랄 포우먼 (1450mg x 90정) 하루 1정 여성전용 3개월분 대용량",
+      "ratio": 36,
+      "price": "16,950"
+    },
+    {
+      "link": "#",
+      "pic": "lowest6.jpg",
+      "product": "★아이팝★ CJ제일제당 햇반 작은공기 130g 36개",
+      "ratio": 3,
+      "price": "29,850"
+    },
+    {
+      "link": "#",
+      "pic": "lowest7.jpg",
+      "product": "★아이팝★ 팔도 미니 왕뚜껑 오리지날 80g 16개 무료배송",
+      "ratio": 6,
+      "price": "12,410"
+    },
+    {
+      "link": "#",
+      "pic": "lowest8.jpg",
+      "product": "★아이팝★ CJ제일제당 스팸 클래식 340g 20개",
+      "ratio": 6,
+      "price": "69,710"
+    },
+    {
+      "link": "#",
+      "pic": "lowest9.jpg",
+      "product": "★아이팝★ [해표] 사조 광천김 도시락김 4g 20개입 x 4개 (총 80봉)",
+      "ratio": 1,
+      "price": "19,500"
+    },
+    {
+      "link": "#",
+      "pic": "lowest10.jpg",
+      "product": "★아이팝★ [SAMSUNG] 삼성 정품 유선이어폰 3.5mm 파이 단자 블랙/화이트 EO-HS1303",
+      "ratio": 3,
+      "price": "9,600"
+    },
+    {
+      "link": "#",
+      "pic": "lowest11.jpg",
+      "product": "★아이팝★ 유유네이처 혈당케어-F (900mg x 60정) 식후 혈당상승 억제 2개월분",
+      "ratio": 38,
+      "price": "12,500"
+    }
+  ],
+  "sodam": [
+    {
+      "link": "#",
+      "pic": "lowest1.jpg",
+      "product": "★단독 국내배송/2023년형★[Iprime] 드리미 V11 무선청소기 최신형 풀패키지 한글판/국내 무상AS/삼성 대용량 배터리/한글설명서 포함/청소키트",
+      "ratio": null,
+      "price": "219,150"
+    },
+    {
+      "link": "#",
+      "pic": "lowest2.jpg",
+      "product": "★TPU창/에어펌프/수리키트 증정★ [예약판매 7월초출고/몬트리프] M7 리빙쉘 에어텐트 카키/아이보리 2종 택1",
+      "ratio": 4,
+      "price": "854,000"
+    },
+    {
+      "link": "#",
+      "pic": "lowest3.jpg",
+      "product": "★아이팝★ [한정수량] 삼성전자 JBL FLIP5 휴대용 방수 블루투스 스피커 블랙/블루/레드",
+      "ratio": 3,
+      "price": "86,900"
+    },
+    {
+      "link": "#",
+      "pic": "lowest4.jpg",
+      "product": "*베베토 젤리/이메이 구미초코볼 /폴라레티 선택구매",
+      "ratio": 6,
+      "price": "12,710"
+    },
+    {
+      "link": "#",
+      "pic": "lowest5.jpg",
+      "product": "★아이팝★ 유유네이처 멀티비타민&멀티미네랄 포우먼 (1450mg x 90정) 하루 1정 여성전용 3개월분 대용량",
+      "ratio": 36,
+      "price": "16,950"
+    },
+    {
+      "link": "#",
+      "pic": "lowest6.jpg",
+      "product": "★아이팝★ CJ제일제당 햇반 작은공기 130g 36개",
+      "ratio": 3,
+      "price": "29,850"
+    },
+    {
+      "link": "#",
+      "pic": "lowest7.jpg",
+      "product": "★아이팝★ 팔도 미니 왕뚜껑 오리지날 80g 16개 무료배송",
+      "ratio": 6,
+      "price": "12,410"
+    },
+    {
+      "link": "#",
+      "pic": "lowest8.jpg",
+      "product": "★아이팝★ CJ제일제당 스팸 클래식 340g 20개",
+      "ratio": 6,
+      "price": "69,710"
+    },
+    {
+      "link": "#",
+      "pic": "lowest9.jpg",
+      "product": "★아이팝★ [해표] 사조 광천김 도시락김 4g 20개입 x 4개 (총 80봉)",
+      "ratio": 1,
+      "price": "19,500"
+    },
+    {
+      "link": "#",
+      "pic": "lowest10.jpg",
+      "product": "★아이팝★ [SAMSUNG] 삼성 정품 유선이어폰 3.5mm 파이 단자 블랙/화이트 EO-HS1303",
+      "ratio": 3,
+      "price": "9,600"
+    },
+    {
+      "link": "#",
+      "pic": "lowest11.jpg",
+      "product": "★아이팝★ 유유네이처 혈당케어-F (900mg x 60정) 식후 혈당상승 억제 2개월분",
+      "ratio": 38,
+      "price": "12,500"
+    }
+  ]
+}
