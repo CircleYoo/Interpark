@@ -509,7 +509,7 @@ function makeTicketSlide(data) {
     .then(response => response.json())
     .then(result => {
       bookData = result;
-      bookSilde(bookData.MD_book);
+      bookSilde(bookData.sale);
     })
   function bookSilde(data) {
     let html = ``;
@@ -517,7 +517,7 @@ function makeTicketSlide(data) {
       let obj = data[i];
       let rank = obj.rank !== null ? `<i class="books-num">${obj.rank}</i>` : '';
       let desc = obj.desc !== null ? `<p class="books-info-desc">${obj.desc}</p>` : '';
-      let sale = obj.sale !== null ? `<span>${obj.sale}%</span>` : '';
+      let sale = obj.sale !== null ? `<span><em>${obj.sale}</em>%</span>` : '';
       let price = obj.price !== null ? `<em>${obj.price}</em>원` : '';
       let temp = `
         <div class="swiper-slide">
