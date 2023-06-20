@@ -5,13 +5,14 @@
 
 /* 추천이벤트 */
 .promotion .inner {
-  height: 290px;
+  height: auto;
 }
 .sw-promotion {
   /* 화면의 너비에 비해 줄어드는 것은 맞다  */
   /* 하지만 일정 너비 이하로는 줄어들지 않았으면 좋겠다.  */
-  width: 50%;
-  min-width: 35rem;
+  width: 100%;
+/*   min-width: 35rem; */
+  max-width: 39rem;
 }
 
 .sw-promotion-control {
