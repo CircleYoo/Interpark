@@ -47,7 +47,7 @@ window.onload = function () {
       makePromotionSlide();
     }
   };
-  xhttp.open("GET", "prodata.json");
+  xhttp.open("GET", "../data/prodata.json");
   xhttp.send();
 
   function makePromotionSlide() {
@@ -112,7 +112,7 @@ window.onload = function () {
   })
   // <!-- Shopping Swiper -->
   let shoppingData;
-  fetch('./shoppingdata.json')
+  fetch('../data/shoppingdata.json')
     .then(response => response.json())
     .then(result => {
       shoppingData = result;
@@ -235,7 +235,7 @@ window.onload = function () {
    * tourXhttp.open("GET", "tourdata.json");
    * tourXhttp.send();
    */ 
-  fetch('./tourdata.json')
+  fetch('../data/tourdata.json')
     .then(response => response.json())
     .then(result => {
       tourData = result;
@@ -340,7 +340,7 @@ ticketBtn.forEach((item, index) => {
 
 // 티켓 json 연동
 let ticketData;
-fetch('./ticketdata.json')
+fetch('../data/ticketdata.json')
   .then(response => response.json())
   .then(result => {
     ticketData = result;
@@ -413,7 +413,7 @@ function makeTicketSlide(data) {
   }
 
   let livedata = null;
-  fetch('./livedata.json')
+  fetch('../data/livedata.json')
     .then(response => response.json())
     .then(result => {
       livedata = result;
@@ -506,7 +506,7 @@ function makeTicketSlide(data) {
   })
   // 오늘의 도서 json 연동
   let bookData = null;
-  fetch('./bookData.json')
+  fetch('../data/bookData.json')
     .then(response => response.json())
     .then(result => {
       bookData = result;
